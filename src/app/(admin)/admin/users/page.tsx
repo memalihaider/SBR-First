@@ -465,7 +465,7 @@ export default function AdminUsersPage() {
           </div>
           <Dialog open={isAddUserOpen} onOpenChange={setIsAddUserOpen}>
             <DialogTrigger asChild>
-              <Button className="bg-white text-red-600 hover:bg-red-50 shadow-lg hover:shadow-xl transition-all duration-200">
+              <Button className="bg-white text-indigo-600 hover:bg-red-50 shadow-lg hover:shadow-xl transition-all duration-200">
                 <UserPlus className="h-5 w-5 mr-2" />
                 Add New User
               </Button>
@@ -474,7 +474,7 @@ export default function AdminUsersPage() {
               <DialogHeader className="bg-linear-to-r from-red-50 to-pink-50 -m-6 mb-4 p-6 rounded-t-lg">
                 <DialogTitle className="text-2xl font-bold text-gray-900 flex items-center">
                   <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-3">
-                    <UserPlus className="h-6 w-6 text-red-600" />
+                    <UserPlus className="h-6 w-6 text-indigo-600" />
                   </div>
                   Add New User
                 </DialogTitle>
@@ -861,7 +861,7 @@ export default function AdminUsersPage() {
                                 variant="ghost"
                                 size="sm"
                                 onClick={() => handleDeleteUser(user)}
-                                className="h-8 w-8 p-0 hover:bg-red-50 hover:text-red-600 transition-colors duration-200"
+                                className="h-8 w-8 p-0 hover:bg-red-50 hover:text-indigo-600 transition-colors duration-200"
                                 disabled={user.role === 'super_admin'}
                               >
                                 <Trash2 className="h-4 w-4" />
@@ -1137,7 +1137,7 @@ export default function AdminUsersPage() {
                             <span className={`text-xs font-bold px-1.5 py-0.5 rounded-full ${
                               permissions.length > 0
                                 ? 'bg-green-100 text-green-700'
-                                : 'bg-red-100 text-red-600'
+                                : 'bg-red-100 text-indigo-600'
                             }`}>
                               {permissions.length > 0 ? `${permissions.length}` : '0'}
                             </span>
@@ -1175,12 +1175,12 @@ export default function AdminUsersPage() {
         <DialogContent className="sm:max-w-[450px] bg-white border-2 border-red-200 shadow-2xl">
           <DialogHeader className="text-center bg-linear-to-r from-red-50 to-pink-50 -m-6 mb-4 p-6 rounded-t-lg">
             <div className="mx-auto w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-4">
-              <Trash2 className="h-8 w-8 text-red-600" />
+              <Trash2 className="h-8 w-8 text-indigo-600" />
             </div>
             <DialogTitle className="text-2xl font-bold text-gray-900">Delete User Account</DialogTitle>
             <DialogDescription className="text-gray-600 mt-2">
               Are you absolutely sure you want to delete <span className="font-semibold text-red-700">{userToDelete?.firstName} {userToDelete?.lastName}</span>?
-              This action <span className="font-bold text-red-600">cannot be undone</span>.
+              This action <span className="font-bold text-indigo-600">cannot be undone</span>.
             </DialogDescription>
           </DialogHeader>
           <div className="px-6 pb-4">

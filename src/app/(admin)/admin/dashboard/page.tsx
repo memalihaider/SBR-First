@@ -500,7 +500,7 @@ export default function AdminDashboard() {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
-          <RefreshCw className="h-8 w-8 animate-spin mx-auto text-red-600" />
+          <RefreshCw className="h-8 w-8 animate-spin mx-auto text-indigo-600" />
           <p className="mt-2 text-gray-600">Loading real-time dashboard data...</p>
         </div>
       </div>
@@ -510,11 +510,11 @@ export default function AdminDashboard() {
   return (
     <div className="space-y-6">
       {/* Header with Currency Selector */}
-      <div className="bg-linear-to-r from-red-600 to-red-700 rounded-xl p-4 lg:p-6 shadow-lg">
+      <div className="bg-slate-900 rounded-xl p-4 lg:p-6 shadow-lg">
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 lg:gap-4">
           <div className="min-w-0 flex-1">
             <h1 className="text-2xl lg:text-3xl font-bold text-white truncate">Real-time System Overview</h1>
-            <p className="text-red-100 mt-1 text-base lg:text-lg">Live ERP Dashboard with Last 5 Days Activity</p>
+            <p className="text-slate-400 mt-1 text-base lg:text-lg">Live ERP Dashboard with Last 5 Days Activity</p>
           </div>
           <div className="flex items-center space-x-3 lg:space-x-4 shrink-0">
             <CurrencySelector />
@@ -529,7 +529,7 @@ export default function AdminDashboard() {
             </Button>
           </div>
         </div>
-        <div className="mt-3 lg:mt-4 text-xs lg:text-sm text-red-200">
+        <div className="mt-3 lg:mt-4 text-xs lg:text-sm text-slate-500">
           Last updated: {lastRefresh.toLocaleString()} • Live Data: Active • Currency: {currency}
         </div>
       </div>
@@ -539,13 +539,13 @@ export default function AdminDashboard() {
         {metrics.map((metric, index) => {
           const IconComponent = metric.icon;
           return (
-            <Card key={index} className="hover:shadow-xl transition-all duration-300 border-2 hover:border-red-200 group min-h-[140px]">
+            <Card key={index} className="hover:shadow-xl transition-all duration-300 border-2 hover:border-indigo-200 group min-h-[140px]">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-semibold text-gray-700 group-hover:text-red-700 transition-colors leading-tight">
+                <CardTitle className="text-sm font-semibold text-gray-700 group-hover:text-indigo-600 transition-colors leading-tight">
                   {metric.title}
                 </CardTitle>
-                <div className="p-2 bg-red-100 rounded-lg group-hover:bg-red-200 transition-colors shrink-0">
-                  <IconComponent className="h-5 w-5 text-red-600" />
+                <div className="p-2 bg-indigo-50 rounded-lg group-hover:bg-indigo-100 transition-colors shrink-0">
+                  <IconComponent className="h-5 w-5 text-indigo-600" />
                 </div>
               </CardHeader>
               <CardContent className="pt-0">
@@ -558,7 +558,7 @@ export default function AdminDashboard() {
                     className={
                       metric.changeType === 'positive'
                         ? 'text-green-600 font-semibold'
-                        : 'text-red-600 font-semibold'
+                        : 'text-indigo-600 font-semibold'
                     }
                   >
                     {metric.change}
@@ -575,7 +575,7 @@ export default function AdminDashboard() {
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-6">
         {/* Revenue Trend Chart */}
         <Card className="shadow-lg">
-          <CardHeader className="bg-linear-to-r from-red-50 to-red-100 rounded-t-lg p-4 lg:p-6">
+          <CardHeader className="bg-slate-50 border-b border-slate-100 rounded-t-lg p-4 lg:p-6">
             <CardTitle className="text-lg lg:text-xl text-gray-900">Revenue Trend</CardTitle>
             <CardDescription className="text-gray-600 font-medium text-sm">
               Monthly revenue projection ({currency})
@@ -596,8 +596,8 @@ export default function AdminDashboard() {
                   type="monotone"
                   dataKey="revenue"
                   stackId="1"
-                  stroke="#DC2626"
-                  fill="#FEE2E2"
+                  stroke="#4F46E5"
+                  fill="#E0E7FF"
                   name="Revenue"
                 />
               </AreaChart>
@@ -607,7 +607,7 @@ export default function AdminDashboard() {
 
         {/* Employee Growth Chart */}
         <Card className="shadow-lg">
-          <CardHeader className="bg-linear-to-r from-red-50 to-red-100 rounded-t-lg p-4 lg:p-6">
+          <CardHeader className="bg-slate-50 border-b border-slate-100 rounded-t-lg p-4 lg:p-6">
             <CardTitle className="text-lg lg:text-xl text-gray-900">Employee Growth</CardTitle>
             <CardDescription className="text-gray-600 font-medium text-sm">
               Monthly employee acquisition trends
@@ -624,7 +624,7 @@ export default function AdminDashboard() {
                 <Line
                   type="monotone"
                   dataKey="employees"
-                  stroke="#DC2626"
+                  stroke="#4F46E5"
                   strokeWidth={3}
                   name="Employees"
                 />
@@ -645,7 +645,7 @@ export default function AdminDashboard() {
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 lg:gap-6">
         {/* Recent Activities */}
         <Card className="shadow-lg">
-          <CardHeader className="bg-linear-to-r from-red-50 to-red-100 rounded-t-lg p-4 lg:p-6">
+          <CardHeader className="bg-slate-50 border-b border-slate-100 rounded-t-lg p-4 lg:p-6">
             <CardTitle className="text-lg lg:text-xl text-gray-900">Recent Activities (Last 5 Days)</CardTitle>
             <CardDescription className="text-gray-600 font-medium text-sm">
               New products, projects, departments and employees added
@@ -655,7 +655,7 @@ export default function AdminDashboard() {
             <div className="space-y-3 max-h-80 lg:max-h-96 overflow-y-auto">
               {sortedActivities.length > 0 ? (
                 sortedActivities.map((activity) => (
-                  <div key={activity.id} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors border-l-4 border-red-200 hover:border-red-400">
+                  <div key={activity.id} className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors border-l-4 border-slate-200 hover:border-indigo-400">
                     <div className={`p-2 rounded-lg ${getActivityColor(activity.type)} shrink-0`}>
                       {getActivityIcon(activity.type)}
                     </div>

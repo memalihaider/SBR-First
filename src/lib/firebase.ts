@@ -30,7 +30,7 @@ const firebaseConfig = {
 // Initialize Firebase
 if (!getApps().length) initializeApp(firebaseConfig);
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;
 export const db = getFirestore();
 
 // Utilities to handle Firestore Timestamps <-> JS Dates

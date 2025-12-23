@@ -661,11 +661,9 @@ const generatePDFWithImages = async (
   const enabledSections = sections.filter((s) => s.enabled);
   const customer = customers.find((c) => c.id === quotationData.customerId);
 
-  // Function to add blue border to each page
+  // Minimal design: No page border
   const addPageBorder = () => {
-    pdf.setDrawColor(59, 130, 246);
-    pdf.setLineWidth(1.5);
-    pdf.rect(10, 10, pageWidth - 20, pageHeight - 20);
+    // No border for minimal design
   };
 
   // Function to add image to PDF
@@ -765,7 +763,7 @@ const generatePDFWithImages = async (
     yPosition += 2;
   };
 
-  // Section Header with Blue Background
+  // Minimal Section Header
   const addSectionHeader = (title: string, number?: number) => {
     if (yPosition + 20 > pageHeight - margin) {
       pdf.addPage();
@@ -774,20 +772,19 @@ const generatePDFWithImages = async (
       addPageBorder();
     }
 
-    pdf.setFillColor(59, 130, 246);
-    pdf.rect(margin, yPosition, pageWidth - 2 * margin, 12, "F");
-
-    pdf.setTextColor(255, 255, 255);
+    pdf.setTextColor(0, 0, 0);
     pdf.setFontSize(14);
     pdf.setFont("helvetica", "bold");
 
-    // ✅ Add numbering to title (e.g., "1. QUOTATION DETAILS", "2. HARDWARE", etc.)
     const titleWithNumber =
       number !== undefined ? `${number}. ${title}` : title;
-    pdf.text(titleWithNumber, margin + 5, yPosition + 8);
+    pdf.text(titleWithNumber, margin, yPosition + 8);
+
+    pdf.setDrawColor(200, 200, 200);
+    pdf.setLineWidth(0.5);
+    pdf.line(margin, yPosition + 12, pageWidth - margin, yPosition + 12);
 
     yPosition += 15;
-    pdf.setTextColor(0, 0, 0);
   };
 
   // Add border to first page
@@ -847,15 +844,15 @@ const generatePDFWithImages = async (
 
             // Define available columns
             const availableColumns = [
-              { key: "itemId", label: "number", width: 0.1 },
-              { key: "sku", label: "part", width: 0.15 },
-              { key: "productName", label: "Product", width: 0.25 },
-              { key: "description", label: "Description", width: 0.2 },
-              { key: "quantity", label: "Qty", width: 0.08 },
-              { key: "rate", label: "Rate", width: 0.12 },
-              { key: "discount", label: "Disc", width: 0.08 },
-              { key: "tax", label: "Tax", width: 0.08 },
-              { key: "amount", label: "Amount", width: 0.12 },
+              { key: "itemId", label: "No.", width: 0.05 },
+              { key: "sku", label: "Part", width: 0.15 },
+              { key: "productName", label: "Product", width: 0.20 },
+              { key: "description", label: "Description", width: 0.25 },
+              { key: "quantity", label: "Qty", width: 0.05, align: "right" },
+              { key: "rate", label: "Rate", width: 0.10, align: "right" },
+              { key: "discount", label: "Disc", width: 0.05, align: "right" },
+              { key: "tax", label: "Tax", width: 0.05, align: "right" },
+              { key: "amount", label: "Amount", width: 0.10, align: "right" },
             ];
 
             // Filter visible columns
@@ -879,49 +876,46 @@ const generatePDFWithImages = async (
               addPageBorder();
             }
 
-            // ✅ Section header with NUMBERING (e.g., "1. HARDWARE", "2. SOFTWARE", etc.)
-            pdf.setFillColor(59, 130, 246);
-            pdf.setTextColor(255, 255, 255);
+            // Minimal Section Header
+            pdf.setTextColor(0, 0, 0);
             pdf.setFontSize(12);
             pdf.setFont("helvetica", "bold");
-            pdf.rect(margin, yPosition, pageWidth - 2 * margin, 10, "F");
-
-            // ✅ Add numbering before title
+            
             pdf.text(
               `${titleCounter}. ${title.title.toUpperCase()}`,
-              margin + 5,
+              margin,
               yPosition + 7
             );
+            
+            pdf.setDrawColor(200, 200, 200);
+            pdf.setLineWidth(0.5);
+            pdf.line(margin, yPosition + 10, pageWidth - margin, yPosition + 10);
+            
             yPosition += 15;
-            pdf.setTextColor(0, 0, 0);
 
-            // Table headers - Dynamic layout
+            // Table headers - Minimal layout
             pdf.setFontSize(10);
             pdf.setFont("helvetica", "bold");
-            pdf.setFillColor(240, 240, 240);
-            pdf.rect(margin, yPosition, contentWidth, 12, "F");
-
+            
             // Dynamic column headers
             visibleColumns.forEach((col, colIndex) => {
-              const alignOffset =
-                col.key === "quantity" ||
-                  col.key === "rate" ||
-                  col.key === "discount" ||
-                  col.key === "tax" ||
-                  col.key === "amount"
-                  ? 10
-                  : 2;
-              pdf.text(
-                col.label,
-                titleColumns[colIndex] + alignOffset,
-                yPosition + 8
-              );
+              let xPos = titleColumns[colIndex];
+              // @ts-ignore
+              if (col.align === "right") {
+                 // @ts-ignore
+                 xPos = titleColumns[colIndex] + (col.width * contentWidth);
+                 pdf.text(col.label, xPos, yPosition + 8, { align: "right" });
+              } else {
+                 pdf.text(col.label, xPos, yPosition + 8);
+              }
             });
+            
+            // Header bottom border
+            pdf.setDrawColor(0, 0, 0);
+            pdf.setLineWidth(0.5);
+            pdf.line(margin, yPosition + 12, pageWidth - margin, yPosition + 12);
+            
             yPosition += 15;
-
-            // Draw table border
-            pdf.setDrawColor(200, 200, 200);
-            pdf.rect(margin, yPosition - 15, contentWidth, 12);
 
             // Table rows
             pdf.setFont("helvetica", "normal");
@@ -936,68 +930,41 @@ const generatePDFWithImages = async (
                 yPosition = margin;
                 addPageBorder();
 
-                // Repeat section header on new page WITH NUMBERING
-                pdf.setFillColor(59, 130, 246);
-                pdf.setTextColor(255, 255, 255);
+                // Repeat section header on new page
+                pdf.setTextColor(0, 0, 0);
                 pdf.setFontSize(12);
                 pdf.setFont("helvetica", "bold");
-                pdf.rect(margin, yPosition, pageWidth - 2 * margin, 10, "F");
-
-                // ✅ Repeat with numbering on new page
                 pdf.text(
-                  `${titleCounter}. ${title.title.toUpperCase()}`,
-                  margin + 5,
+                  `${titleCounter}. ${title.title.toUpperCase()} (Cont.)`,
+                  margin,
                   yPosition + 7
                 );
+                pdf.setDrawColor(200, 200, 200);
+                pdf.line(margin, yPosition + 10, pageWidth - margin, yPosition + 10);
                 yPosition += 15;
-                pdf.setTextColor(0, 0, 0);
 
-                // Repeat table headers dynamically
+                // Repeat table headers
                 pdf.setFontSize(10);
                 pdf.setFont("helvetica", "bold");
-                pdf.setFillColor(240, 240, 240);
-                pdf.rect(margin, yPosition, contentWidth, 12, "F");
                 visibleColumns.forEach((col, colIndex) => {
-                  const alignOffset =
-                    col.key === "quantity" ||
-                      col.key === "rate" ||
-                      col.key === "discount" ||
-                      col.key === "tax" ||
-                      col.key === "amount"
-                      ? 10
-                      : 2;
-                  pdf.text(
-                    col.label,
-                    titleColumns[colIndex] + alignOffset,
-                    yPosition + 8
-                  );
+                   let xPos = titleColumns[colIndex];
+                   // @ts-ignore
+                   if (col.align === "right") {
+                      // @ts-ignore
+                      xPos = titleColumns[colIndex] + (col.width * contentWidth);
+                      pdf.text(col.label, xPos, yPosition + 8, { align: "right" });
+                   } else {
+                      pdf.text(col.label, xPos, yPosition + 8);
+                   }
                 });
+                pdf.setDrawColor(0, 0, 0);
+                pdf.line(margin, yPosition + 12, pageWidth - margin, yPosition + 12);
                 yPosition += 15;
-              }
-
-              // Alternating row background
-              if (index % 2 === 0) {
-                pdf.setFillColor(250, 250, 250);
-                pdf.rect(
-                  margin,
-                  yPosition - 2,
-                  pageWidth - 2 * margin,
-                  10,
-                  "F"
-                );
               }
 
               // Row data with dynamic columns
               visibleColumns.forEach((col, colIndex) => {
                 let cellValue = "";
-                const alignOffset =
-                  col.key === "quantity" ||
-                    col.key === "rate" ||
-                    col.key === "discount" ||
-                    col.key === "tax" ||
-                    col.key === "amount"
-                    ? 10
-                    : 2;
 
                 switch (col.key) {
                   case "itemId":
@@ -1037,14 +1004,18 @@ const generatePDFWithImages = async (
                     break;
                 }
 
-                pdf.text(
-                  cellValue.substring(
-                    0,
-                    Math.floor((col.width * contentWidth) / 3)
-                  ),
-                  titleColumns[colIndex] + alignOffset,
-                  yPosition + 5
-                );
+                let xPos = titleColumns[colIndex];
+                // @ts-ignore
+                if (col.align === "right") {
+                   // @ts-ignore
+                   xPos = titleColumns[colIndex] + (col.width * contentWidth);
+                   pdf.text(cellValue, xPos, yPosition + 5, { align: "right" });
+                } else {
+                   // Truncate text if too long
+                   const maxWidth = (col.width * contentWidth) - 2;
+                   const text = pdf.splitTextToSize(cellValue, maxWidth)[0];
+                   pdf.text(text, xPos, yPosition + 5);
+                }
               });
 
               yPosition += 10;
@@ -1095,34 +1066,42 @@ const generatePDFWithImages = async (
                 yPosition += 5;
               }
 
+              // Light separator line between rows
+              pdf.setDrawColor(240, 240, 240);
+              pdf.setLineWidth(0.2);
+              pdf.line(margin, yPosition, pageWidth - margin, yPosition);
+              yPosition += 5;
+
               pdf.setFont("helvetica", "normal");
               pdf.setFontSize(9);
             }
 
-            // Section total - Fixed positioning to stay within borders
+            // Section total - Minimal
             yPosition += 5;
             pdf.setFont("helvetica", "bold");
             pdf.setFontSize(10);
-            pdf.setFillColor(59, 130, 246);
-            pdf.setTextColor(255, 255, 255);
-
-            // Use full width for total row, keep it within borders
-            pdf.rect(margin, yPosition - 2, contentWidth, 10, "F");
+            pdf.setTextColor(0, 0, 0);
 
             // ✅ Section total with numbering
             pdf.text(
               `${titleCounter}. TOTAL(${title.title.toUpperCase()})`,
-              margin + 5,
+              margin,
               yPosition + 5
             );
-            pdf.text(
-              formatAmount(sectionTotal),
-              summaryColumns[1] - 20,
-              yPosition + 5,
-              { align: "right" }
-            );
+            
+            // Align total to the Amount column
+            // Find the Amount column index
+            const amountColIndex = visibleColumns.findIndex(c => c.key === "amount");
+            if (amountColIndex !== -1) {
+                const amountCol = visibleColumns[amountColIndex];
+                // @ts-ignore
+                const xPos = titleColumns[amountColIndex] + (amountCol.width * contentWidth);
+                pdf.text(formatAmount(sectionTotal), xPos, yPosition + 5, { align: "right" });
+            } else {
+                pdf.text(formatAmount(sectionTotal), pageWidth - margin, yPosition + 5, { align: "right" });
+            }
+            
             yPosition += 15;
-            pdf.setTextColor(0, 0, 0);
           }
 
           // ✅ Increment title counter for next title
@@ -1130,32 +1109,35 @@ const generatePDFWithImages = async (
         }
       }
 
-      // Overall summary on new page
-      pdf.addPage();
-      currentPage++;
-      yPosition = margin;
-      addPageBorder();
+      // Overall summary
+      if (yPosition + 60 > pageHeight - margin) {
+          pdf.addPage();
+          currentPage++;
+          yPosition = margin;
+      } else {
+          yPosition += 10;
+      }
 
-      // Summary header WITH NUMBERING
-      pdf.setFillColor(59, 130, 246);
-      pdf.setTextColor(255, 255, 255);
+      // Summary header
+      pdf.setTextColor(0, 0, 0);
       pdf.setFontSize(14);
       pdf.setFont("helvetica", "bold");
-      pdf.rect(margin, yPosition, pageWidth - 2 * margin, 12, "F");
-
-      // ✅ Add final numbering to summary
+      
       const visibleTitlesCount =
         quotationSection.data.titles?.filter(
           (title: QuotationTitle) => !quotationData.deletedFields?.[title.id]
         ).length || 0;
       const summaryNumber = visibleTitlesCount + 1;
+      
       pdf.text(
         `${summaryNumber}. QUOTATION SUMMARY`,
-        margin + 5,
+        margin,
         yPosition + 8
       );
+      pdf.setDrawColor(200, 200, 200);
+      pdf.setLineWidth(0.5);
+      pdf.line(margin, yPosition + 12, pageWidth - margin, yPosition + 12);
       yPosition += 20;
-      pdf.setTextColor(0, 0, 0);
 
       // Calculate totals
       const subtotal = visibleItems.reduce(
@@ -1183,7 +1165,7 @@ const generatePDFWithImages = async (
 
       const grandTotal = subtotal + totalTax + totalServiceCharges;
 
-      // Summary table
+      // Summary table - Minimal
       pdf.setFontSize(11);
       pdf.setFont("helvetica", "normal");
 
@@ -1193,30 +1175,34 @@ const generatePDFWithImages = async (
         { label: "Service Charges", value: formatAmount(totalServiceCharges) },
       ];
 
-      summaryItems.forEach((item, index) => {
-        if (index % 2 === 0) {
-          pdf.setFillColor(250, 250, 250);
-          pdf.rect(margin, yPosition - 2, pageWidth - 2 * margin, 10, "F");
-        }
+      // Align summary to the right side of the page
+      const summaryLabelX = pageWidth - margin - 80;
+      const summaryValueX = pageWidth - margin;
 
-        pdf.text(item.label, summaryColumns[0] + 5, yPosition + 5);
-        pdf.text(item.value, summaryColumns[1] + 5, yPosition + 5);
-        yPosition += 10;
+      summaryItems.forEach((item) => {
+        pdf.text(item.label, summaryLabelX, yPosition + 5);
+        pdf.text(item.value, summaryValueX, yPosition + 5, { align: "right" });
+        yPosition += 8;
       });
 
-      // Grand total - Properly positioned within borders
+      // Grand total
       yPosition += 5;
-      pdf.setFillColor(59, 130, 246);
-      pdf.setTextColor(255, 255, 255);
       pdf.setFont("helvetica", "bold");
       pdf.setFontSize(13);
-      pdf.rect(margin, yPosition - 2, pageWidth - 2 * margin, 12, "F");
-
-      // ✅ Add numbering to grand total
-      pdf.text(`${summaryNumber + 1}. TOTAL (AED)`, margin + 5, yPosition + 7);
-      pdf.text(formatAmount(grandTotal), summaryColumns[1] + 5, yPosition + 7);
+      
+      // Top border for total
+      pdf.setDrawColor(0, 0, 0);
+      pdf.setLineWidth(0.5);
+      pdf.line(summaryLabelX, yPosition, pageWidth - margin, yPosition);
+      
+      pdf.text(`${summaryNumber + 1}. TOTAL (AED)`, summaryLabelX, yPosition + 8);
+      pdf.text(formatAmount(grandTotal), summaryValueX, yPosition + 8, { align: "right" });
+      
+      // Bottom double border for total
+      pdf.line(summaryLabelX, yPosition + 12, pageWidth - margin, yPosition + 12);
+      pdf.line(summaryLabelX, yPosition + 14, pageWidth - margin, yPosition + 14);
+      
       yPosition += 20;
-      pdf.setTextColor(0, 0, 0);
     }
   }
 
@@ -1237,6 +1223,8 @@ const generatePDFWithImages = async (
     ).length || 0;
   const bankDetailsNumber = visibleTitlesCount + 3;
   pdf.text(`${bankDetailsNumber}. BANK DETAILS:`, margin, bankDetailsY);
+  pdf.setDrawColor(200, 200, 200);
+  pdf.line(margin, bankDetailsY + 2, margin + 100, bankDetailsY + 2); // Underline title
 
   pdf.setFont("helvetica", "normal");
   pdf.setFontSize(10);
@@ -1260,16 +1248,12 @@ const generatePDFWithImages = async (
   for (let i = 1; i <= totalPages; i++) {
     pdf.setPage(i);
     pdf.setFontSize(8);
-    pdf.setTextColor(128, 128, 128);
+    pdf.setTextColor(150, 150, 150);
     pdf.text(
       `Page ${i} of ${totalPages}`,
-      pageWidth - margin - 20,
-      pageHeight - 10
-    );
-    pdf.text(
-      `Generated on ${new Date().toLocaleDateString()}`,
-      margin,
-      pageHeight - 10
+      pageWidth - margin,
+      pageHeight - 10,
+      { align: "right" }
     );
   }
 

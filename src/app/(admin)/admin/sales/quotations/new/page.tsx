@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, Suspense } from "react";
 import React from "react";
 import {
   Card,
@@ -2339,7 +2339,7 @@ if (agreementSection) {
 };
 //pdf
 
-export default function NewQuotationPage() {
+function NewQuotationPageContent() {
   const { formatAmount } = useCurrency();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -7417,6 +7417,14 @@ Our team has carefully analyzed your requirements and developed a tailored solut
         </div>
       </div>
     </div>
+  );
+}
+
+export default function NewQuotationPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <NewQuotationPageContent />
+    </Suspense>
   );
 }
 
