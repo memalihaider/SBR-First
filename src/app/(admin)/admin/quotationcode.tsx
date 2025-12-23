@@ -1800,6 +1800,9 @@ export default function NewQuotationPage() {
     [key: string]: boolean;
   }>({});
 
+  // State for textarea heights to make images responsive
+  const [textareaHeights, setTextareaHeights] = useState<{ [key: string]: number }>({});
+
   // NEW: State for template and sections visibility
   const [isTemplateSectionVisible, setIsTemplateSectionVisible] =
     useState(true);
@@ -3604,6 +3607,14 @@ export default function NewQuotationPage() {
     }));
   };
 
+  // Function to handle textarea height changes for responsive images
+  const handleTextareaHeightChange = (itemId: string, height: number) => {
+    setTextareaHeights((prev) => ({
+      ...prev,
+      [itemId]: height,
+    }));
+  };
+
   const renderQuotationItems = (section: QuotationSection) => {
     // Toggle title collapse
     const toggleTitleCollapse = (titleId: string) => {
@@ -4828,23 +4839,99 @@ export default function NewQuotationPage() {
                             </div>
                           </div>
 
-                          {/* Description Row - Below the main row */}
+                          {/* Description Row - IMAGE MOVES DOWN WITH TEXTAREA */}
                           <div className="flex items-start mt-1">
-                            {/* Empty space for number alignment */}
-                            <div className="flex-shrink-0 w-10"></div>
-
+                            {/* Space for number column */}
+                            <div className="w-10 flex-shrink-0"></div>
+                            
+                            {/* Product Image Section - WITH RESPONSIVE SIZING */}
+                            <div 
+                              className="flex-shrink-0 mr-2 transition-all duration-200 ease-in-out"
+                              style={{
+                                marginTop: `${Math.max(0, (textareaHeights[item.id] || 65) - 65) / 2}px`
+                              }}
+                            >
+                              {item.productId && item.images && item.images.length > 0 ? (
+                                <div 
+                                  className="relative bg-white rounded border border-blue-800 overflow-hidden group"
+                                  style={{
+                                    width: `${Math.max(80, (textareaHeights[item.id] || 65) * 0.8)}px`,
+                                    height: `${Math.max(106, (textareaHeights[item.id] || 65) * 1.2)}px`
+                                  }}
+                                >
+                                  <div className="absolute inset-0 flex items-center justify-center p-1">
+                                    <img
+                                      src={item.images[0]}
+                                      alt={item.productName || "Product"}
+                                      className="max-w-full max-h-full w-auto h-auto"
+                                      style={{
+                                        objectFit: 'contain',
+                                        maxWidth: '100%',
+                                        maxHeight: '100%'
+                                      }}
+                                      onError={(e) => {
+                                        (e.target as HTMLImageElement).src = 'https://placeholder.com/200x400?text=No+Image';
+                                      }}
+                                    />
+                                  </div>
+                                  {/* Hover overlay for image */}
+                                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                    <Button
+                                      size="sm"
+                                      variant="secondary"
+                                      className="h-6 px-2 text-xs bg-white text-blue-600 hover:bg-blue-50"
+                                      onClick={() => {
+                                        // Remove image functionality
+                                        updateQuotationItemWithMerge(item.id, {
+                                          images: [],
+                                        });
+                                      }}
+                                    >
+                                      <Trash2 className="h-3 w-3 mr-1" />
+                                      Remove
+                                    </Button>
+                                  </div>
+                                </div>
+                              ) : null}
+                            </div>
+                            
                             {/* Description Textarea */}
                             <div className="flex-1">
                               <textarea
                                 value={item.description || ""}
-                                onChange={(e) =>
+                                onChange={(e) => {
                                   updateQuotationItemWithMerge(item.id, {
                                     description: e.target.value,
-                                  })
-                                }
+                                  });
+                                }}
+                                onInput={(e) => {
+                                  const textarea = e.target as HTMLTextAreaElement;
+                                  textarea.style.height = 'auto';
+                                  const scrollHeight = textarea.scrollHeight;
+                                  const newHeight = Math.min(Math.max(scrollHeight, 65), 500);
+                                  
+                                  // Update textarea height
+                                  textarea.style.height = `${newHeight}px`;
+                                  
+                                  // Update state for responsive image sizing
+                                  handleTextareaHeightChange(item.id, newHeight);
+                                }}
+                                onFocus={(e) => {
+                                  const textarea = e.target as HTMLTextAreaElement;
+                                  textarea.style.height = 'auto';
+                                  const scrollHeight = textarea.scrollHeight;
+                                  const newHeight = Math.min(Math.max(scrollHeight, 65), 500);
+                                  textarea.style.height = `${newHeight}px`;
+                                  handleTextareaHeightChange(item.id, newHeight);
+                                }}
                                 placeholder="Enter description..."
-                                className="w-full p-2 text-xs border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent resize-none bg-white min-h-[40px]"
-                                rows={2}
+                                className="w-full p-2 text-xs border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent resize-none bg-white overflow-y-auto transition-all duration-200 ease-in-out"
+                                style={{
+                                  resize: "vertical",
+                                  minHeight: "65px",
+                                  maxHeight: "500px",
+                                  height: `${textareaHeights[item.id] || 65}px`
+                                }}
                               />
                             </div>
                           </div>
