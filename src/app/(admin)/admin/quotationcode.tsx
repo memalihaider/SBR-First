@@ -4900,9 +4900,21 @@ export default function NewQuotationPage() {
                               <textarea
                                 value={item.description || ""}
                                 onChange={(e) => {
-                                  updateQuotationItemWithMerge(item.id, {
-                                    description: e.target.value,
-                                  });
+                                  // Simple direct update for description
+                                  const quotationSection = sections.find(
+                                    (s) => s.type === "quotation_items"
+                                  );
+                                  if (quotationSection) {
+                                    const updatedItems = quotationSection.data.items.map(
+                                      (i: QuotationItem) => {
+                                        if (i.id === item.id) {
+                                          return { ...i, description: e.target.value };
+                                        }
+                                        return i;
+                                      }
+                                    );
+                                    updateSectionData("quotation_items", { items: updatedItems });
+                                  }
                                 }}
                                 onInput={(e) => {
                                   const textarea = e.target as HTMLTextAreaElement;
@@ -4925,7 +4937,7 @@ export default function NewQuotationPage() {
                                   handleTextareaHeightChange(item.id, newHeight);
                                 }}
                                 placeholder="Enter description..."
-                                className="w-full p-2 text-xs border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent resize-none bg-white overflow-y-auto transition-all duration-200 ease-in-out"
+                                className="w-full p-2 text-xs border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-transparent bg-white overflow-y-auto transition-all duration-200 ease-in-out"
                                 style={{
                                   resize: "vertical",
                                   minHeight: "65px",
