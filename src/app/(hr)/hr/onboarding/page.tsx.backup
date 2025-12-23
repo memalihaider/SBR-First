@@ -1,0 +1,1080 @@
+'use client';
+
+import { useState } from 'react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { Progress } from '@/components/ui/progress';
+import { UserCheck, Clock, CheckCircle, AlertCircle, Users, Calendar, FileText, Plus, Eye, Edit, Save, X, UserPlus, Settings, User } from 'lucide-react';
+import { toast } from 'sonner';
+
+export default function HROnboardingPage() {
+  // State management for dialogs
+  const [isStartOnboardingOpen, setIsStartOnboardingOpen] = useState(false);
+  const [isViewDetailsOpen, setIsViewDetailsOpen] = useState(false);
+  const [isUpdateProgressOpen, setIsUpdateProgressOpen] = useState(false);
+  const [isEditTemplateOpen, setIsEditTemplateOpen] = useState(false);
+  const [isManageTemplatesOpen, setIsManageTemplatesOpen] = useState(false);
+  const [isAssignMentorsOpen, setIsAssignMentorsOpen] = useState(false);
+  const [selectedOnboarding, setSelectedOnboarding] = useState<any>(null);
+  const [selectedTemplate, setSelectedTemplate] = useState<any>(null);
+
+  // Form state
+  const [onboardingForm, setOnboardingForm] = useState({
+    employeeName: '',
+    employeeEmail: '',
+    position: '',
+    department: '',
+    startDate: '',
+    mentorId: '',
+    templateId: '',
+  });
+
+  const [templateForm, setTemplateForm] = useState({
+    name: '',
+    description: '',
+    department: '',
+    duration: '',
+    tasks: [] as any[],
+  });
+
+  const [taskUpdate, setTaskUpdate] = useState({
+    taskId: '',
+    status: 'pending',
+    notes: '',
+  });
+
+  const onboardingStats = [
+    {
+      title: 'Active Onboardings',
+      value: '12',
+      change: '+3',
+      icon: UserCheck,
+      color: 'text-blue-600',
+      bgColor: 'bg-blue-100',
+    },
+    {
+      title: 'Completed This Month',
+      value: '28',
+      change: '+15%',
+      icon: CheckCircle,
+      color: 'text-green-600',
+      bgColor: 'bg-green-100',
+    },
+    {
+      title: 'Pending Tasks',
+      value: '45',
+      change: '-8%',
+      icon: Clock,
+      color: 'text-yellow-600',
+      bgColor: 'bg-yellow-100',
+    },
+    {
+      title: 'Average Completion Time',
+      value: '14 days',
+      change: '-2 days',
+      icon: Calendar,
+      color: 'text-purple-600',
+      bgColor: 'bg-purple-100',
+    },
+  ];
+
+  const [activeOnboardings, setActiveOnboardings] = useState([
+    {
+      id: 1,
+      employeeName: 'Alice Johnson',
+      position: 'Senior Software Developer',
+      startDate: '2024-12-01',
+      progress: 75,
+      status: 'in-progress',
+      tasksCompleted: 12,
+      totalTasks: 16,
+      mentor: 'John Smith',
+      department: 'Engineering',
+      employeeEmail: 'alice.johnson@company.com',
+    },
+    {
+      id: 2,
+      employeeName: 'Bob Smith',
+      position: 'Sales Representative',
+      startDate: '2024-11-28',
+      progress: 60,
+      status: 'in-progress',
+      tasksCompleted: 9,
+      totalTasks: 15,
+      mentor: 'Sarah Davis',
+      department: 'Sales',
+      employeeEmail: 'bob.smith@company.com',
+    },
+    {
+      id: 3,
+      employeeName: 'Carol Davis',
+      position: 'Marketing Specialist',
+      startDate: '2024-11-25',
+      progress: 90,
+      status: 'almost-complete',
+      tasksCompleted: 18,
+      totalTasks: 20,
+      mentor: 'Mike Wilson',
+      department: 'Marketing',
+      employeeEmail: 'carol.davis@company.com',
+    },
+    {
+      id: 4,
+      employeeName: 'David Wilson',
+      position: 'HR Coordinator',
+      startDate: '2024-12-05',
+      progress: 25,
+      status: 'just-started',
+      tasksCompleted: 3,
+      totalTasks: 12,
+      mentor: 'Lisa Brown',
+      department: 'HR',
+      employeeEmail: 'david.wilson@company.com',
+    },
+  ]);
+
+  const [onboardingTemplates, setOnboardingTemplates] = useState([
+    {
+      id: 1,
+      name: 'Software Developer Onboarding',
+      department: 'Engineering',
+      tasks: 16,
+      duration: '2 weeks',
+      lastUsed: '2024-11-20',
+      status: 'active',
+      description: 'Complete onboarding process for software developers including technical setup, training, and team integration.',
+    },
+    {
+      id: 2,
+      name: 'Sales Team Onboarding',
+      department: 'Sales',
+      tasks: 15,
+      duration: '1.5 weeks',
+      lastUsed: '2024-11-18',
+      status: 'active',
+      description: 'Sales team onboarding covering product knowledge, CRM training, and sales processes.',
+    },
+    {
+      id: 3,
+      name: 'Marketing Onboarding',
+      department: 'Marketing',
+      tasks: 20,
+      duration: '3 weeks',
+      lastUsed: '2024-11-15',
+      status: 'active',
+      description: 'Marketing team onboarding including brand guidelines, tools training, and campaign management.',
+    },
+  ]);
+
+  const [upcomingTasks, setUpcomingTasks] = useState([
+    {
+      id: 1,
+      employee: 'Alice Johnson',
+      task: 'Complete Security Training',
+      dueDate: '2024-12-03',
+      priority: 'high',
+      status: 'pending',
+    },
+    {
+      id: 2,
+      employee: 'Bob Smith',
+      task: 'Setup Workstation',
+      dueDate: '2024-12-02',
+      priority: 'high',
+      status: 'pending',
+    },
+    {
+      id: 3,
+      employee: 'Carol Davis',
+      task: 'Team Introduction Meeting',
+      dueDate: '2024-12-04',
+      priority: 'medium',
+      status: 'pending',
+    },
+  ]);
+
+  const mentors = [
+    { id: '1', name: 'John Smith', department: 'Engineering' },
+    { id: '2', name: 'Sarah Davis', department: 'Sales' },
+    { id: '3', name: 'Mike Wilson', department: 'Marketing' },
+    { id: '4', name: 'Lisa Brown', department: 'HR' },
+  ];
+
+  // Handler functions
+  const handleStartNewOnboarding = () => {
+    if (!onboardingForm.employeeName || !onboardingForm.employeeEmail || !onboardingForm.position || !onboardingForm.department || !onboardingForm.startDate) {
+      toast.error('Please fill in all required fields');
+      return;
+    }
+
+    const newOnboarding = {
+      id: Math.max(...activeOnboardings.map(o => o.id)) + 1,
+      ...onboardingForm,
+      progress: 0,
+      status: 'not-started',
+      tasksCompleted: 0,
+      totalTasks: 12, // Default tasks
+      mentor: mentors.find(m => m.id === onboardingForm.mentorId)?.name || 'Unassigned',
+    };
+
+    setActiveOnboardings([...activeOnboardings, newOnboarding]);
+    setOnboardingForm({
+      employeeName: '',
+      employeeEmail: '',
+      position: '',
+      department: '',
+      startDate: '',
+      mentorId: '',
+      templateId: '',
+    });
+    setIsStartOnboardingOpen(false);
+    toast.success('New onboarding process started successfully');
+  };
+
+  const handleViewDetails = (onboarding: any) => {
+    setSelectedOnboarding(onboarding);
+    setIsViewDetailsOpen(true);
+  };
+
+  const handleUpdateProgress = (onboarding: any) => {
+    setSelectedOnboarding(onboarding);
+    setTaskUpdate({
+      taskId: '',
+      status: 'pending',
+      notes: '',
+    });
+    setIsUpdateProgressOpen(true);
+  };
+
+  const handleUpdateTaskProgress = () => {
+    if (!selectedOnboarding || !taskUpdate.taskId) {
+      toast.error('Please select a task to update');
+      return;
+    }
+
+    // Update the onboarding progress
+    const updatedOnboardings = activeOnboardings.map(onboarding => {
+      if (onboarding.id === selectedOnboarding.id) {
+        const newTasksCompleted = taskUpdate.status === 'completed' ? onboarding.tasksCompleted + 1 : onboarding.tasksCompleted;
+        const newProgress = Math.round((newTasksCompleted / onboarding.totalTasks) * 100);
+        return {
+          ...onboarding,
+          tasksCompleted: newTasksCompleted,
+          progress: newProgress,
+          status: newProgress >= 90 ? 'almost-complete' : newProgress > 0 ? 'in-progress' : 'just-started',
+        };
+      }
+      return onboarding;
+    });
+
+    setActiveOnboardings(updatedOnboardings);
+    setIsUpdateProgressOpen(false);
+    toast.success('Task progress updated successfully');
+  };
+
+  const handleEditTemplate = (template: any) => {
+    setSelectedTemplate(template);
+    setTemplateForm({
+      name: template.name,
+      description: template.description,
+      department: template.department,
+      duration: template.duration,
+      tasks: [], // Would be populated with actual tasks
+    });
+    setIsEditTemplateOpen(true);
+  };
+
+  const handleUpdateTemplate = () => {
+    if (!selectedTemplate || !templateForm.name || !templateForm.department) {
+      toast.error('Please fill in all required fields');
+      return;
+    }
+
+    const updatedTemplates = onboardingTemplates.map(template =>
+      template.id === selectedTemplate.id
+        ? { ...template, name: templateForm.name, description: templateForm.description, department: templateForm.department, duration: templateForm.duration }
+        : template
+    );
+
+    setOnboardingTemplates(updatedTemplates);
+    setIsEditTemplateOpen(false);
+    setSelectedTemplate(null);
+    toast.success('Template updated successfully');
+  };
+
+  const handleCompleteTask = (taskId: number) => {
+    const updatedTasks = upcomingTasks.map(task =>
+      task.id === taskId
+        ? { ...task, status: 'completed' }
+        : task
+    );
+    setUpcomingTasks(updatedTasks);
+    toast.success('Task marked as completed');
+  };
+
+  const handleManageTemplates = () => {
+    setTemplateForm({
+      name: '',
+      description: '',
+      department: '',
+      duration: '',
+      tasks: [],
+    });
+    setIsManageTemplatesOpen(true);
+  };
+
+  const handleCreateTemplate = () => {
+    if (!templateForm.name || !templateForm.department || !templateForm.duration) {
+      toast.error('Please fill in all required fields');
+      return;
+    }
+
+    const newTemplate = {
+      id: Math.max(...onboardingTemplates.map(t => t.id)) + 1,
+      name: templateForm.name,
+      description: templateForm.description,
+      department: templateForm.department,
+      duration: templateForm.duration,
+      lastUsed: 'Never',
+      status: 'active',
+      tasks: 10, // Default number of tasks
+    };
+
+    setOnboardingTemplates([...onboardingTemplates, newTemplate]);
+    setIsManageTemplatesOpen(false);
+    toast.success('New template created successfully');
+  };
+
+  const handleAssignMentors = () => {
+    setIsAssignMentorsOpen(true);
+  };
+
+  const getStatusBadge = (status: string) => {
+    switch (status) {
+      case 'in-progress':
+        return <Badge className="bg-blue-100 text-blue-800">In Progress</Badge>;
+      case 'almost-complete':
+        return <Badge className="bg-green-100 text-green-800">Almost Complete</Badge>;
+      case 'just-started':
+        return <Badge className="bg-yellow-100 text-yellow-800">Just Started</Badge>;
+      case 'completed':
+        return <Badge className="bg-purple-100 text-purple-800">Completed</Badge>;
+      default:
+        return <Badge variant="secondary">Unknown</Badge>;
+    }
+  };
+
+  const getPriorityBadge = (priority: string) => {
+    switch (priority) {
+      case 'high':
+        return <Badge className="bg-red-100 text-red-800">High Priority</Badge>;
+      case 'medium':
+        return <Badge className="bg-yellow-100 text-yellow-800">Medium Priority</Badge>;
+      case 'low':
+        return <Badge className="bg-green-100 text-green-800">Low Priority</Badge>;
+      default:
+        return <Badge variant="secondary">Unknown</Badge>;
+    }
+  };
+
+  return (
+    <div className="space-y-6">
+      <div className="bg-linear-to-r from-emerald-600 to-emerald-700 rounded-xl p-6 shadow-lg">
+        <h1 className="text-3xl font-bold text-white">Employee Onboarding</h1>
+        <p className="text-emerald-100 mt-1 text-lg">Manage new hire onboarding processes and checklists</p>
+      </div>
+
+      {/* Stats Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {onboardingStats.map((stat, index) => {
+          const IconComponent = stat.icon;
+          return (
+            <Card key={index} className="hover:shadow-xl transition-all duration-300 border-2 hover:border-emerald-200">
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-semibold text-gray-700">
+                  {stat.title}
+                </CardTitle>
+                <div className={`p-2 ${stat.bgColor} rounded-lg`}>
+                  <IconComponent className={`h-5 w-5 ${stat.color}`} />
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl font-bold text-gray-900">{stat.value}</div>
+                <p className="text-sm mt-1">
+                  <span
+                    className={
+                      stat.change.startsWith('+') && !stat.change.includes('-')
+                        ? 'text-green-600 font-semibold'
+                        : stat.change.startsWith('-')
+                        ? 'text-red-600 font-semibold'
+                        : 'text-gray-600 font-semibold'
+                    }
+                  >
+                    {stat.change}
+                  </span>{' '}
+                  <span className="text-gray-500">from last month</span>
+                </p>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Active Onboardings */}
+        <Card className="shadow-lg">
+          <CardHeader className="bg-linear-to-r from-gray-50 to-gray-100 rounded-t-lg">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+              <div>
+                <CardTitle className="text-xl text-gray-900">Active Onboardings</CardTitle>
+                <CardDescription className="text-gray-600 font-medium">
+                  Current new hire onboarding progress
+                </CardDescription>
+              </div>
+              <Button className="bg-emerald-600 hover:bg-emerald-700 text-white shadow-md" onClick={() => setIsStartOnboardingOpen(true)}>
+                <Plus className="h-4 w-4 mr-2" />
+                Start New Onboarding
+              </Button>
+            </div>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <div className="space-y-4">
+              {activeOnboardings.map((onboarding) => (
+                <div key={onboarding.id} className="p-4 rounded-lg hover:bg-gray-50 transition-colors border">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center space-x-3">
+                      <div className="shrink-0 h-10 w-10">
+                        <div className="h-10 w-10 rounded-full bg-linear-to-br from-emerald-400 to-emerald-600 flex items-center justify-center">
+                          <span className="text-sm font-semibold text-white">
+                            {onboarding.employeeName.split(' ').map(n => n[0]).join('')}
+                          </span>
+                        </div>
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-gray-900">
+                          {onboarding.employeeName}
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          {onboarding.position} • {onboarding.department}
+                        </p>
+                      </div>
+                    </div>
+                    {getStatusBadge(onboarding.status)}
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-gray-600">Progress</span>
+                      <span className="font-semibold text-gray-900">
+                        {onboarding.tasksCompleted}/{onboarding.totalTasks} tasks
+                      </span>
+                    </div>
+                    <Progress value={onboarding.progress} className="h-2" />
+                    <div className="flex justify-between text-xs text-gray-500">
+                      <span>Mentor: {onboarding.mentor}</span>
+                      <span>Started: {new Date(onboarding.startDate).toLocaleDateString()}</span>
+                    </div>
+                  </div>
+                  <div className="flex justify-end mt-3 space-x-2">
+                    <Button variant="outline" size="sm" className="text-emerald-600 border-emerald-300 hover:bg-emerald-50" onClick={() => handleViewDetails(onboarding)}>
+                      <Eye className="h-4 w-4 mr-1" />
+                      View Details
+                    </Button>
+                    <Button variant="outline" size="sm" className="text-emerald-600 border-emerald-300 hover:bg-emerald-50" onClick={() => handleUpdateProgress(onboarding)}>
+                      <Edit className="h-4 w-4 mr-1" />
+                      Update Progress
+                    </Button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Onboarding Templates */}
+        <Card className="shadow-lg">
+          <CardHeader className="bg-linear-to-r from-gray-50 to-gray-100 rounded-t-lg">
+            <CardTitle className="text-xl text-gray-900">Onboarding Templates</CardTitle>
+            <CardDescription className="text-gray-600 font-medium">
+              Standardized onboarding processes by department
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <div className="space-y-4">
+              {onboardingTemplates.map((template) => (
+                <div key={template.id} className="flex items-center justify-between p-4 rounded-lg hover:bg-gray-50 transition-colors border">
+                  <div className="flex-1">
+                    <div className="flex items-center space-x-3">
+                      <div className="p-2 bg-emerald-100 rounded-lg">
+                        <FileText className="h-5 w-5 text-emerald-600" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-gray-900">
+                          {template.name}
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          {template.tasks} tasks • {template.duration} • {template.department}
+                        </p>
+                        <p className="text-xs text-gray-400">
+                          Last used: {new Date(template.lastUsed).toLocaleDateString()}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Badge variant="outline" className="text-emerald-600 border-emerald-300">
+                      {template.status}
+                    </Badge>
+                    <Button variant="outline" size="sm" className="text-emerald-600 border-emerald-300 hover:bg-emerald-50" onClick={() => handleEditTemplate(template)}>
+                      <Edit className="h-4 w-4 mr-1" />
+                      Edit
+                    </Button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Upcoming Tasks */}
+      <Card className="shadow-lg">
+        <CardHeader className="bg-linear-to-r from-amber-50 to-orange-50 rounded-t-lg">
+          <CardTitle className="text-xl text-gray-900">Upcoming Tasks</CardTitle>
+          <CardDescription className="text-gray-600 font-medium">
+            Critical onboarding tasks requiring attention
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="pt-6">
+          <div className="space-y-4">
+            {upcomingTasks.map((task) => (
+              <div key={task.id} className="flex items-center justify-between p-4 rounded-lg hover:bg-gray-50 transition-colors border">
+                <div className="flex-1">
+                  <div className="flex items-center space-x-3">
+                    <div className="p-2 bg-amber-100 rounded-lg">
+                      <AlertCircle className="h-5 w-5 text-amber-600" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900">
+                        {task.task}
+                      </p>
+                      <p className="text-xs text-gray-500">
+                        {task.employee} • Due: {new Date(task.dueDate).toLocaleDateString()}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-3">
+                  {getPriorityBadge(task.priority)}
+                  <Badge variant="outline" className="text-amber-600 border-amber-300">
+                    {task.status}
+                  </Badge>
+                  <Button variant="outline" size="sm" className="text-emerald-600 border-emerald-300 hover:bg-emerald-50" onClick={() => handleCompleteTask(task.id)}>
+                    <CheckCircle className="h-4 w-4 mr-1" />
+                    Complete
+                  </Button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Quick Actions */}
+      <Card className="shadow-lg">
+        <CardHeader className="bg-linear-to-r from-emerald-50 to-teal-50 rounded-t-lg">
+          <CardTitle className="text-xl text-gray-900">Onboarding Actions</CardTitle>
+          <CardDescription className="text-gray-600 font-medium">
+            Common onboarding management tasks
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="pt-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Button className="p-5 border-2 border-emerald-200 rounded-xl hover:bg-linear-to-br hover:from-emerald-50 hover:to-teal-50 hover:border-emerald-300 text-left transition-all duration-200 group shadow-md hover:shadow-xl" onClick={() => setIsStartOnboardingOpen(true)}>
+              <div className="flex items-center space-x-3 mb-2">
+                <div className="p-2 bg-emerald-100 rounded-lg group-hover:bg-emerald-200 transition-colors">
+                  <UserCheck className="h-5 w-5 text-emerald-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-lg">Start New Onboarding</h3>
+              </div>
+              <p className="text-sm text-gray-600 font-medium">
+                Initiate onboarding for new hires
+              </p>
+            </Button>
+            <Button className="p-5 border-2 border-blue-200 rounded-xl hover:bg-linear-to-br hover:from-blue-50 hover:to-indigo-50 hover:border-blue-300 text-left transition-all duration-200 group shadow-md hover:shadow-xl" onClick={handleManageTemplates}>
+              <div className="flex items-center space-x-3 mb-2">
+                <div className="p-2 bg-blue-100 rounded-lg group-hover:bg-blue-200 transition-colors">
+                  <FileText className="h-5 w-5 text-blue-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-lg">Manage Templates</h3>
+              </div>
+              <p className="text-sm text-gray-600 font-medium">
+                Create and edit onboarding templates
+              </p>
+            </Button>
+            <Button className="p-5 border-2 border-purple-200 rounded-xl hover:bg-linear-to-br hover:from-purple-50 hover:to-pink-50 hover:border-purple-300 text-left transition-all duration-200 group shadow-md hover:shadow-xl" onClick={handleAssignMentors}>
+              <div className="flex items-center space-x-3 mb-2">
+                <div className="p-2 bg-purple-100 rounded-lg group-hover:bg-purple-200 transition-colors">
+                  <Users className="h-5 w-5 text-purple-600" />
+                </div>
+                <h3 className="font-bold text-gray-900 text-lg">Assign Mentors</h3>
+              </div>
+              <p className="text-sm text-gray-600 font-medium">
+                Assign mentors to new employees
+              </p>
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Start New Onboarding Dialog */}
+      <Dialog open={isStartOnboardingOpen} onOpenChange={setIsStartOnboardingOpen}>
+        <DialogContent className="sm:max-w-[600px]">
+          <DialogHeader>
+            <DialogTitle>Start New Onboarding</DialogTitle>
+            <DialogDescription>
+              Initiate the onboarding process for a new employee.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="employee-name">Employee Name *</Label>
+                <Input
+                  id="employee-name"
+                  value={onboardingForm.employeeName}
+                  onChange={(e) => setOnboardingForm({...onboardingForm, employeeName: e.target.value})}
+                  placeholder="Enter employee name"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="employee-email">Email *</Label>
+                <Input
+                  id="employee-email"
+                  type="email"
+                  value={onboardingForm.employeeEmail}
+                  onChange={(e) => setOnboardingForm({...onboardingForm, employeeEmail: e.target.value})}
+                  placeholder="Enter email address"
+                />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="position">Position *</Label>
+                <Input
+                  id="position"
+                  value={onboardingForm.position}
+                  onChange={(e) => setOnboardingForm({...onboardingForm, position: e.target.value})}
+                  placeholder="Enter job position"
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="department">Department *</Label>
+                <Select value={onboardingForm.department} onValueChange={(value) => setOnboardingForm({...onboardingForm, department: value})}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select department" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Engineering">Engineering</SelectItem>
+                    <SelectItem value="Sales">Sales</SelectItem>
+                    <SelectItem value="Marketing">Marketing</SelectItem>
+                    <SelectItem value="HR">HR</SelectItem>
+                    <SelectItem value="Finance">Finance</SelectItem>
+                    <SelectItem value="Operations">Operations</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="start-date">Start Date *</Label>
+                <Input
+                  id="start-date"
+                  type="date"
+                  value={onboardingForm.startDate}
+                  onChange={(e) => setOnboardingForm({...onboardingForm, startDate: e.target.value})}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="mentor">Mentor</Label>
+                <Select value={onboardingForm.mentorId} onValueChange={(value) => setOnboardingForm({...onboardingForm, mentorId: value})}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select mentor" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {mentors.map((mentor) => (
+                      <SelectItem key={mentor.id} value={mentor.id}>
+                        {mentor.name} ({mentor.department})
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="template">Onboarding Template</Label>
+              <Select value={onboardingForm.templateId} onValueChange={(value) => setOnboardingForm({...onboardingForm, templateId: value})}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select template (optional)" />
+                </SelectTrigger>
+                <SelectContent>
+                  {onboardingTemplates.map((template) => (
+                    <SelectItem key={template.id} value={template.id.toString()}>
+                      {template.name} ({template.department})
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+          </div>
+          <div className="flex justify-end space-x-2">
+            <Button variant="outline" onClick={() => setIsStartOnboardingOpen(false)}>
+              Cancel
+            </Button>
+            <Button onClick={handleStartNewOnboarding} className="bg-emerald-600 hover:bg-emerald-700">
+              <UserPlus className="h-4 w-4 mr-2" />
+              Start Onboarding
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* View Details Dialog */}
+      <Dialog open={isViewDetailsOpen} onOpenChange={setIsViewDetailsOpen}>
+        <DialogContent className="sm:max-w-[700px]">
+          <DialogHeader>
+            <DialogTitle>Onboarding Details</DialogTitle>
+            <DialogDescription>
+              Complete information about the onboarding process.
+            </DialogDescription>
+          </DialogHeader>
+          {selectedOnboarding && (
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="h-16 w-16 rounded-full bg-linear-to-br from-emerald-400 to-emerald-600 flex items-center justify-center">
+                  <span className="text-xl font-semibold text-white">
+                    {selectedOnboarding.employeeName.split(' ').map((n: string) => n[0]).join('')}
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-900">{selectedOnboarding.employeeName}</h3>
+                  <p className="text-gray-500">{selectedOnboarding.employeeEmail}</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div>
+                    <Label className="text-sm font-medium text-gray-500">Position</Label>
+                    <p className="text-sm text-gray-900">{selectedOnboarding.position}</p>
+                  </div>
+                  <div>
+                    <Label className="text-sm font-medium text-gray-500">Department</Label>
+                    <p className="text-sm text-gray-900">{selectedOnboarding.department}</p>
+                  </div>
+                  <div>
+                    <Label className="text-sm font-medium text-gray-500">Mentor</Label>
+                    <p className="text-sm text-gray-900">{selectedOnboarding.mentor}</p>
+                  </div>
+                  <div>
+                    <Label className="text-sm font-medium text-gray-500">Start Date</Label>
+                    <p className="text-sm text-gray-900">{new Date(selectedOnboarding.startDate).toLocaleDateString()}</p>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <Label className="text-sm font-medium text-gray-500">Status</Label>
+                    <div className="mt-1">{getStatusBadge(selectedOnboarding.status)}</div>
+                  </div>
+                  <div>
+                    <Label className="text-sm font-medium text-gray-500">Progress</Label>
+                    <div className="mt-2">
+                      <Progress value={selectedOnboarding.progress} className="h-2" />
+                      <p className="text-xs text-gray-500 mt-1">
+                        {selectedOnboarding.tasksCompleted} of {selectedOnboarding.totalTasks} tasks completed
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          <div className="flex justify-end space-x-2">
+            <Button variant="outline" onClick={() => setIsViewDetailsOpen(false)}>
+              Close
+            </Button>
+            <Button onClick={() => { handleUpdateProgress(selectedOnboarding); setIsViewDetailsOpen(false); }} className="bg-emerald-600 hover:bg-emerald-700">
+              <Edit className="h-4 w-4 mr-2" />
+              Update Progress
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Update Progress Dialog */}
+      <Dialog open={isUpdateProgressOpen} onOpenChange={setIsUpdateProgressOpen}>
+        <DialogContent className="sm:max-w-[500px]">
+          <DialogHeader>
+            <DialogTitle>Update Onboarding Progress</DialogTitle>
+            <DialogDescription>
+              Update the progress of onboarding tasks for {selectedOnboarding?.employeeName}.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div className="space-y-2">
+              <Label htmlFor="task-id">Task</Label>
+              <Select value={taskUpdate.taskId} onValueChange={(value) => setTaskUpdate({...taskUpdate, taskId: value})}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select task to update" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="1">Complete Security Training</SelectItem>
+                  <SelectItem value="2">Setup Workstation</SelectItem>
+                  <SelectItem value="3">HR Documentation</SelectItem>
+                  <SelectItem value="4">Team Introduction</SelectItem>
+                  <SelectItem value="5">System Access Setup</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="task-status">Status</Label>
+              <Select value={taskUpdate.status} onValueChange={(value) => setTaskUpdate({...taskUpdate, status: value})}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Select status" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="pending">Pending</SelectItem>
+                  <SelectItem value="in-progress">In Progress</SelectItem>
+                  <SelectItem value="completed">Completed</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="task-notes">Notes</Label>
+              <Textarea
+                id="task-notes"
+                value={taskUpdate.notes}
+                onChange={(e) => setTaskUpdate({...taskUpdate, notes: e.target.value})}
+                placeholder="Add any notes about this task update..."
+                rows={3}
+              />
+            </div>
+          </div>
+          <div className="flex justify-end space-x-2">
+            <Button variant="outline" onClick={() => setIsUpdateProgressOpen(false)}>
+              Cancel
+            </Button>
+            <Button onClick={handleUpdateTaskProgress} className="bg-emerald-600 hover:bg-emerald-700">
+              <Save className="h-4 w-4 mr-2" />
+              Update Progress
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Edit Template Dialog */}
+      <Dialog open={isEditTemplateOpen} onOpenChange={setIsEditTemplateOpen}>
+        <DialogContent className="sm:max-w-[600px]">
+          <DialogHeader>
+            <DialogTitle>Edit Onboarding Template</DialogTitle>
+            <DialogDescription>
+              Update the onboarding template details.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div className="space-y-2">
+              <Label htmlFor="template-name">Template Name *</Label>
+              <Input
+                id="template-name"
+                value={templateForm.name}
+                onChange={(e) => setTemplateForm({...templateForm, name: e.target.value})}
+                placeholder="Enter template name"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="template-description">Description</Label>
+              <Textarea
+                id="template-description"
+                value={templateForm.description}
+                onChange={(e) => setTemplateForm({...templateForm, description: e.target.value})}
+                placeholder="Enter template description"
+                rows={3}
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="template-department">Department *</Label>
+                <Select value={templateForm.department} onValueChange={(value) => setTemplateForm({...templateForm, department: value})}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select department" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Engineering">Engineering</SelectItem>
+                    <SelectItem value="Sales">Sales</SelectItem>
+                    <SelectItem value="Marketing">Marketing</SelectItem>
+                    <SelectItem value="HR">HR</SelectItem>
+                    <SelectItem value="Finance">Finance</SelectItem>
+                    <SelectItem value="Operations">Operations</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="template-duration">Duration *</Label>
+                <Input
+                  id="template-duration"
+                  value={templateForm.duration}
+                  onChange={(e) => setTemplateForm({...templateForm, duration: e.target.value})}
+                  placeholder="e.g., 2 weeks"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-end space-x-2">
+            <Button variant="outline" onClick={() => setIsEditTemplateOpen(false)}>
+              Cancel
+            </Button>
+            <Button onClick={handleUpdateTemplate} className="bg-emerald-600 hover:bg-emerald-700">
+              <Save className="h-4 w-4 mr-2" />
+              Update Template
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Manage Templates Dialog */}
+      <Dialog open={isManageTemplatesOpen} onOpenChange={setIsManageTemplatesOpen}>
+        <DialogContent className="sm:max-w-[600px]">
+          <DialogHeader>
+            <DialogTitle>Create New Template</DialogTitle>
+            <DialogDescription>
+              Create a new onboarding template for a department.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-4">
+            <div className="space-y-2">
+              <Label htmlFor="new-template-name">Template Name *</Label>
+              <Input
+                id="new-template-name"
+                value={templateForm.name}
+                onChange={(e) => setTemplateForm({...templateForm, name: e.target.value})}
+                placeholder="Enter template name"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="new-template-description">Description</Label>
+              <Textarea
+                id="new-template-description"
+                value={templateForm.description}
+                onChange={(e) => setTemplateForm({...templateForm, description: e.target.value})}
+                placeholder="Enter template description"
+                rows={3}
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="new-template-department">Department *</Label>
+                <Select value={templateForm.department} onValueChange={(value) => setTemplateForm({...templateForm, department: value})}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select department" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="Engineering">Engineering</SelectItem>
+                    <SelectItem value="Sales">Sales</SelectItem>
+                    <SelectItem value="Marketing">Marketing</SelectItem>
+                    <SelectItem value="HR">HR</SelectItem>
+                    <SelectItem value="Finance">Finance</SelectItem>
+                    <SelectItem value="Operations">Operations</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="new-template-duration">Duration *</Label>
+                <Input
+                  id="new-template-duration"
+                  value={templateForm.duration}
+                  onChange={(e) => setTemplateForm({...templateForm, duration: e.target.value})}
+                  placeholder="e.g., 2 weeks"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-end space-x-2">
+            <Button variant="outline" onClick={() => setIsManageTemplatesOpen(false)}>
+              Cancel
+            </Button>
+            <Button onClick={handleCreateTemplate} className="bg-emerald-600 hover:bg-emerald-700">
+              <Plus className="h-4 w-4 mr-2" />
+              Create Template
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Assign Mentors Dialog */}
+      <Dialog open={isAssignMentorsOpen} onOpenChange={setIsAssignMentorsOpen}>
+        <DialogContent className="sm:max-w-[600px]">
+          <DialogHeader>
+            <DialogTitle>Assign Mentors</DialogTitle>
+            <DialogDescription>
+              Assign mentors to employees who don't have one assigned.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-4">
+            <div className="bg-blue-50 p-4 rounded-lg">
+              <h4 className="font-semibold text-blue-900 mb-2">Available Mentors</h4>
+              <div className="space-y-2">
+                {mentors.map((mentor) => (
+                  <div key={mentor.id} className="flex items-center justify-between p-2 bg-white rounded border">
+                    <div className="flex items-center space-x-3">
+                      <div className="p-2 bg-blue-100 rounded-lg">
+                        <User className="h-4 w-4 text-blue-600" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-gray-900">{mentor.name}</p>
+                        <p className="text-xs text-gray-500">{mentor.department}</p>
+                      </div>
+                    </div>
+                    <Badge variant="outline" className="text-blue-600 border-blue-300">
+                      Available
+                    </Badge>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="bg-yellow-50 p-4 rounded-lg">
+              <h4 className="font-semibold text-yellow-900 mb-2">Employees Needing Mentors</h4>
+              <div className="space-y-2">
+                {activeOnboardings.filter(o => o.mentor === 'Unassigned').map((onboarding) => (
+                  <div key={onboarding.id} className="flex items-center justify-between p-2 bg-white rounded border">
+                    <div className="flex items-center space-x-3">
+                      <div className="p-2 bg-yellow-100 rounded-lg">
+                        <User className="h-4 w-4 text-yellow-600" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-gray-900">{onboarding.employeeName}</p>
+                        <p className="text-xs text-gray-500">{onboarding.position} • {onboarding.department}</p>
+                      </div>
+                    </div>
+                    <Button size="sm" variant="outline" className="text-yellow-600 border-yellow-300 hover:bg-yellow-50">
+                      Assign Mentor
+                    </Button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-end space-x-2">
+            <Button variant="outline" onClick={() => setIsAssignMentorsOpen(false)}>
+              Close
+            </Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+    </div>
+  );
+}

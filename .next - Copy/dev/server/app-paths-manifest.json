@@ -1,0 +1,7 @@
+{
+  "/(admin)/admin/sales/quotations/page": "app/(admin)/admin/sales/quotations/page.js",
+  "/(admin)/admin/sales/quotations/new/page": "app/(admin)/admin/sales/quotations/new/page.js",
+  "/(admin)/admin/inventory/products/page": "app/(admin)/admin/inventory/products/page.js",
+  "/(admin)/admin/inventory/categories/page": "app/(admin)/admin/inventory/categories/page.js",
+  "/(admin)/admin/inventory/services/page": "app/(admin)/admin/inventory/services/page.js"
+}

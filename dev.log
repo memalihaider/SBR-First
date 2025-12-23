@@ -1,0 +1,15 @@
+
+> largify-360erp@0.1.0 dev
+> next dev --webpack
+
+   ▲ Next.js 16.0.0 (webpack)
+   - Local:        http://localhost:3000
+   - Network:      http://10.56.174.188:3000
+
+ ✓ Starting...
+ ✓ Ready in 1933ms
+ GET /hr/onboarding 200 in 3.3s (compile: 3.0s, render: 306ms)
+ GET /hr/onboarding 200 in 51ms (compile: 11ms, render: 40ms)
+ GET /hr/onboarding 200 in 796ms (compile: 681ms, render: 116ms)
+ GET /hr/onboarding 200 in 196ms (compile: 105ms, render: 91ms)
+[?25h

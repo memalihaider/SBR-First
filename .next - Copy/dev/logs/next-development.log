@@ -1,0 +1,2987 @@
+[00:00:05.201] Server  LOG      ✓ Ready in 4.5s
+[00:00:25.294] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:06:53.137] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:06:53.343] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:06:53.343] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:06:56.083] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:06:56.530] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:06:57.099] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[00:06:57.280] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+[00:06:57.620] Server  LOG      ○ Compiling /_error ...
+[00:08:35.303] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:36.519] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:37.436] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:08:37.599] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:08:38.282] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[00:08:38.403] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+[00:09:02.342] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:02.832] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:02.832] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:09:03.476] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:04.007] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:09:04.023] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[00:09:04.404] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[00:09:04.516] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '}'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:2425:1]
+ 2422 │         </div>
+ 2423 │         <Button
+ 2424 │           variant="ghost"
+ 2425 │           size="icon" {/* Changed to icon button */}
+      ·                                                    ─
+ 2426 │           onClick={() =>
+ 2427 │             setIsTemplateSectionVisible(!isTemplateSectionVisible)
+ 2427 │           }
+      ╰────
+
+Caused by:
+    Syntax Error
+[00:09:36.918] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:37.704] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:43.364] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:09:44.158] Server  WARN    [2025-12-08T03:13:09.393Z]  @firebase/analytics: "Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context)."
+[00:33:08.990] Server  LOG      ○ Compiling /admin/inventory/products ...
+[00:36:13.031] Browser ERROR   ./src/app/(admin)/admin/inventory/products/page.tsx
+Error:   × Expected '</', got ')'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\inventory\products\page.tsx:1302:1]
+ 1299 │                                   ) : (
+ 1300 │                                     // <span className="text-lg">{category.icon}</span>
+ 1301 │                                   )
+ 1302 │                                 )}
+      ·                                 ─
+ 1303 │                                 <span>{category.name}</span>
+ 1304 │                               </div>
+ 1304 │                             </SelectItem>
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/inventory/products/page.tsx
+[00:36:14.340] Browser ERROR   ./src/app/(admin)/admin/inventory/products/page.tsx
+Error:   × Expected '</', got ')'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\inventory\products\page.tsx:1302:1]
+ 1299 │                                   ) : (
+ 1300 │                                     // <span className="text-lg">{category.icon}</span>
+ 1301 │                                   )
+ 1302 │                                 )}
+      ·                                 ─
+ 1303 │                                 <span>{category.name}</span>
+ 1304 │                               </div>
+ 1304 │                             </SelectItem>
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/inventory/products/page.tsx
+[00:36:14.597] Server  ERROR    ⨯ ./src/app/(admin)/admin/inventory/products/page.tsx
+Error:   × Expected '</', got ')'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\inventory\products\page.tsx:1302:1]
+ 1299 │                                   ) : (
+ 1300 │                                     // <span className="text-lg">{category.icon}</span>
+ 1301 │                                   )
+ 1302 │                                 )}
+      ·                                 ─
+ 1303 │                                 <span>{category.name}</span>
+ 1304 │                               </div>
+ 1304 │                             </SelectItem>
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/inventory/products/page.tsx
+[00:36:15.245] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected '</', got ')'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\inventory\products\page.tsx:1302:1]
+ 1299 │                                   ) : (
+ 1300 │                                     // <span className="text-lg">{category.icon}</span>
+ 1301 │                                   )
+ 1302 │                                 )}
+      ·                                 ─
+ 1303 │                                 <span>{category.name}</span>
+ 1304 │                               </div>
+ 1304 │                             </SelectItem>
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[00:36:15.384] Browser ERROR   ./src/app/(admin)/admin/inventory/products/page.tsx
+Error:   × Expected '</', got ')'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\inventory\products\page.tsx:1302:1]
+ 1299 │                                   ) : (
+ 1300 │                                     // <span className="text-lg">{category.icon}</span>
+ 1301 │                                   )
+ 1302 │                                 )}
+      ·                                 ─
+ 1303 │                                 <span>{category.name}</span>
+ 1304 │                               </div>
+ 1304 │                             </SelectItem>
+      ╰────
+
+Caused by:
+    Syntax Error
+[00:36:33.643] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:36:34.207] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:36:36.244] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:36:36.532] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:36:36.940] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected '</', got ')'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\inventory\products\page.tsx:1302:1]
+ 1299 │                                   ) : (
+ 1300 │                                     // <span className="text-lg">{category.icon}</span>
+ 1301 │                                   )
+ 1302 │                                 )}
+      ·                                 ─
+ 1303 │                                 <span>{category.name}</span>
+ 1304 │                               </div>
+ 1304 │                             </SelectItem>
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[00:36:55.248] Server  WARN    [2025-12-08T03:40:20.590Z]  @firebase/analytics: "Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context)."
+[00:41:11.199] Server  LOG      ○ Compiling /admin/inventory/services ...
+[00:42:36.672] Browser ERROR   Received NaN for the `%s` attribute. If this is expected, cast the value to a string. value
+[00:44:53.828] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:44:53.828] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:45:36.047] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:45:36.047] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:45:48.855] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:45:48.855] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:46:05.518] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. RwVHhKBf0a3YEdoIpZ6s
+[00:46:05.518] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:46:05.518] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. RwVHhKBf0a3YEdoIpZ6s
+[00:46:05.518] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:46:18.384] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:46:18.384] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:46:22.535] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:47:54.431] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:47:54.431] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:48:02.194] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:48:02.194] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:48:56.042] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. RwVHhKBf0a3YEdoIpZ6s
+[00:48:56.042] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:48:56.042] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. RwVHhKBf0a3YEdoIpZ6s
+[00:48:56.042] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:50:09.127] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:50:09.127] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:50:48.476] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:51:20.700] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. RwVHhKBf0a3YEdoIpZ6s
+[00:51:20.700] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:51:26.500] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. RwVHhKBf0a3YEdoIpZ6s
+[00:51:37.063] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. RwVHhKBf0a3YEdoIpZ6s
+[00:51:37.063] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:51:46.359] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:51:47.537] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:51:48.758] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:53:02.001] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:53:02.001] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[00:53:36.922] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <div> p 
+
+  ...
+    <Presence present={true}>
+      <FocusScope asChild={true} loop={true} trapped={true} onMountAutoFocus={undefined} ...>
+        <Primitive.div tabIndex={-1} asChild={true} ref={function} ...>
+          <Primitive.div.Slot tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ref={function}>
+            <Primitive.div.SlotClone tabIndex={-1} onKeyDown={function FocusScope.useCallback[handleKeyDown]} ...>
+              <DismissableLayer role="dialog" id="radix-_r_138_" aria-describedby="radix-_r_13a_" ...>
+                <Primitive.div role="dialog" id="radix-_r_138_" aria-describedby="radix-_r_13a_" ...>
+                  <div role="dialog" id="radix-_r_138_" aria-describedby="radix-_r_13a_" aria-labelledby="radix-_r_139_" ...>
+                    <DialogHeader>
+                    <div className="space-y-6 ...">
+                      <div className="grid grid-...">
+                        <div>
+                        <div>
+                          <h4>
+                          <div className="space-y-1 ...">
+>                           <p>
+                              <span>
+                              <Badge variant="default" className="ml-2">
+>                               <div
+>                                 className="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-sem..."
+>                               >
+                            ...
+                      ...
+                    ...
+      ...
+
+[00:53:36.922] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <div>
+[00:54:07.693] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. NWdWW7pY7wq5mUOsHLQp
+[01:31:00.976] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Return statement is not allowed here
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:5902:1]
+ 5899 │         }
+ 5900 │       };
+ 5901 │     
+ 5902 │ ╭─▶   return (
+ 5903 │ │       <div className="space-y-6">
+ 5904 │ │         <div className="bg-linear-to-r from-red-600 to-red-700 rounded-xl p-6 shadow-lg">
+ 5905 │ │           <div className="flex items-center justify-between">
+ 5906 │ │             <div>
+ 5907 │ │               <h1 className="text-3xl font-bold text-white">
+ 5908 │ │                 {isEditing ? "Edit Quotation" : "Create Professional Proposal"}
+ 5909 │ │               </h1>
+ 5910 │ │               <p className="text-red-100 mt-1 text-lg">
+ 5911 │ │                 {isEditing
+ 5912 │ │                   ? `Editing: ${quotationData.quotationNumber}`
+ 5913 │ │                   : "Build comprehensive proposals with 10 customizable sections"}
+ 5914 │ │               </p>
+ 5915 │ │               {savedQuotationId && (
+ 5916 │ │                 <p className="text-red-200 text-sm mt-1">
+ 5917 │ │                   Saved as: {savedQuotationId}
+ 5918 │ │                 </p>
+ 5919 │ │               )}
+ 5920 │ │             </div>
+ 5921 │ │             <div className="flex gap-3">
+ 5922 │ │               <Button
+ 5923 │ │                 variant="outline"
+ 5924 │ │                 className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+ 5925 │ │                 onClick={saveAsDraft}
+ 5926 │ │                 disabled={loadingStates.saveDraft || customersLoading}
+ 5927 │ │               >
+ 5928 │ │                 {loadingStates.saveDraft ? (
+ 5929 │ │                   <>
+ 5930 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5931 │ │                     Saving...
+ 5932 │ │                   </>
+ 5933 │ │                 ) : (
+ 5934 │ │                   <>
+ 5935 │ │                     <Save className="h-4 w-4 mr-2" />
+ 5936 │ │                     Save Draft
+ 5937 │ │                   </>
+ 5938 │ │                 )}
+ 5939 │ │               </Button>
+ 5940 │ │   
+ 5941 │ │               <Button
+ 5942 │ │                 className="bg-blue-600 hover:bg-blue-700 text-white"
+ 5943 │ │                 onClick={saveQuotation}
+ 5944 │ │                 disabled={loadingStates.saveQuotation || customersLoading}
+ 5945 │ │               >
+ 5946 │ │                 {loadingStates.saveQuotation ? (
+ 5947 │ │                   <>
+ 5948 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5949 │ │                     Saving...
+ 5950 │ │                   </>
+ 5951 │ │                 ) : (
+ 5952 │ │                   <>
+ 5953 │ │                     <FileCheck className="h-4 w-4 mr-2" />
+ 5954 │ │                     Save Quotation
+ 5955 │ │                   </>
+ 5956 │ │                 )}
+ 5957 │ │               </Button>
+ 5958 │ │   
+ 5959 │ │               <Button
+ 5960 │ │                 className="bg-white text-red-600 hover:bg-red-50"
+ 5961 │ │                 onClick={generatePDF}
+ 5962 │ │                 disabled={loadingStates.generatePDF}
+ 5963 │ │               >
+ 5964 │ │                 {loadingStates.generatePDF ? (
+ 5965 │ │                   <>
+ 5966 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5967 │ │                     Generating...
+ 5968 │ │                   </>
+ 5969 │ │                 ) : (
+ 5970 │ │                   <>
+ 5971 │ │                     <Download className="h-4 w-4 mr-2" />
+ 5972 │ │                     Generate PDF
+ 5973 │ │                   </>
+ 5974 │ │                 )}
+ 5975 │ │               </Button>
+ 5976 │ │             </div>
+ 5977 │ │           </div>
+ 5978 │ │         </div>
+ 5979 │ │   
+ 5980 │ │         {/* Template Selector and Proposal Sections in one row */}
+ 5981 │ │         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+ 5982 │ │           {/* Template Selector - Takes 3 columns */}
+ 5983 │ │           <div className="lg:col-span-3">
+ 5984 │ │             <TemplateSelector />
+ 5985 │ │           </div>
+ 5986 │ │   
+ 5987 │ │           {/* Proposal Sections - Takes 9 columns (collapsed state ke hisab se adjust) */}
+ 5988 │ │           <div className="lg:col-span-9">
+ 5989 │ │        <Card className="w-full">
+ 5990 │ │     <CardHeader className="flex flex-row items-center justify-between p-3">
+ 5991 │ │       <div>
+ 5992 │ │         <CardTitle className="text-base">Sections</CardTitle>
+ 5993 │ │         {isProposalSectionsVisible && (
+ 5994 │ │           <CardDescription className="text-xs">
+ 5995 │ │             Click eye to toggle sections
+ 5996 │ │           </CardDescription>
+ 5997 │ │         )}
+ 5998 │ │       </div>
+ 5999 │ │       <Button
+ 6000 │ │         variant="ghost"
+ 6001 │ │         size="icon"
+ 6002 │ │         onClick={() => setIsProposalSectionsVisible(!isProposalSectionsVisible)}
+ 6003 │ │         className="h-6 w-6 p-0"
+ 6004 │ │       >
+ 6005 │ │         {isProposalSectionsVisible ? (
+ 6006 │ │           <EyeOff className="h-3 w-3" />
+ 6007 │ │         ) : (
+ 6008 │ │           <Eye className="h-3 w-3" />
+ 6009 │ │         )}
+ 6010 │ │       </Button>
+ 6011 │ │     </CardHeader>
+ 6012 │ │   
+ 6013 │ │     {/* Smooth collapse/expand for Proposal Sections */}
+ 6014 │ │     <div
+ 6015 │ │       className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6016 │ │         isProposalSectionsVisible
+ 6017 │ │           ? "max-h-[320px] opacity-100"
+ 6018 │ │           : "max-h-0 opacity-0"
+ 6019 │ │       }`}
+ 6020 │ │     >
+ 6021 │ │       <CardContent className="p-2">
+ 6022 │ │         {/* ULTRA COMPACT: 2 columns grid with very small spacing */}
+ 6023 │ │         <div className="grid grid-cols-2 gap-1.5">
+ 6024 │ │           {sections.map((section, index) => (
+ 6025 │ │             <div
+ 6026 │ │               key={section.id}
+ 6027 │ │               draggable
+ 6028 │ │               onDragStart={(e) => handleDragStart(e, section.id)}
+ 6029 │ │               onDragOver={handleDragOver}
+ 6030 │ │               onDrop={(e) => handleDrop(e, section.id)}
+ 6031 │ │               className={`p-1.5 rounded-md border cursor-move transition-all flex items-center justify-between ${
+ 6032 │ │                 section.enabled
+ 6033 │ │                   ? "border-green-300 bg-green-50 hover:border-green-400"
+ 6034 │ │                   : "border-gray-200 bg-gray-50 opacity-70"
+ 6035 │ │               }`}
+ 6036 │ │             >
+ 6037 │ │               {/* Left side: Section info */}
+ 6038 │ │               <div className="flex items-center space-x-1.5 flex-1 min-w-0">
+ 6039 │ │                 <div className="w-4 h-4 flex items-center justify-center rounded bg-gray-100 text-gray-600 text-xs font-bold flex-shrink-0">
+ 6040 │ │                   {section.order}
+ 6041 │ │                 </div>
+ 6042 │ │                 <span className={`text-xs font-medium truncate ${
+ 6043 │ │                   section.enabled ? "text-gray-800" : "text-gray-500"
+ 6044 │ │                 }`}>
+ 6045 │ │                   {section.title.split(" ")[0]}
+ 6046 │ │                 </span>
+ 6047 │ │               </div>
+ 6048 │ │               
+ 6049 │ │               {/* Right side: Controls */}
+ 6050 │ │               <div className="flex items-center space-x-0.5 flex-shrink-0">
+ 6051 │ │                 <Button
+ 6052 │ │                   size="sm"
+ 6053 │ │                   variant="ghost"
+ 6054 │ │                   className="h-5 w-5 p-0"
+ 6055 │ │                   onClick={() => moveSection(index, Math.max(0, index - 1))}
+ 6056 │ │                   disabled={index === 0}
+ 6057 │ │                 >
+ 6058 │ │                   <ArrowUp className="h-2 w-2" />
+ 6059 │ │                 </Button>
+ 6060 │ │                 <Button
+ 6061 │ │                   size="sm"
+ 6062 │ │                   variant="ghost"
+ 6063 │ │                   className="h-5 w-5 p-0"
+ 6064 │ │                   onClick={() => moveSection(index, Math.min(sections.length - 1, index + 1))}
+ 6065 │ │                   disabled={index === sections.length - 1}
+ 6066 │ │                 >
+ 6067 │ │                   <ArrowDown className="h-2 w-2" />
+ 6068 │ │                 </Button>
+ 6069 │ │                 <Checkbox
+ 6070 │ │                   checked={section.enabled}
+ 6071 │ │                   onCheckedChange={() => toggleSection(section.id)}
+ 6072 │ │                   className="h-3 w-3 ml-0.5"
+ 6073 │ │                 />
+ 6074 │ │               </div>
+ 6075 │ │             </div>
+ 6076 │ │           ))}
+ 6077 │ │         </div>
+ 6078 │ │         
+ 6079 │ │         
+ 6080 │ │       </CardContent>
+ 6081 │ │     </div>
+ 6082 │ │   </Card>
+ 6083 │ │           </div>
+ 6084 │ │        </div>
+ 6085 │ │   
+ 6086 │ │         {customersError && (
+ 6087 │ │           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+ 6088 │ │             <div className="flex items-center">
+ 6089 │ │               <AlertTriangle className="h-5 w-5 text-yellow-600 mr-2" />
+ 6090 │ │               <span className="text-yellow-800 text-sm">
+ 6091 │ │                 {customersError.includes("index")
+ 6092 │ │                   ? "Optimizing customer data loading... Please wait a few minutes."
+ 6093 │ │                   : customersError}
+ 6094 │ │               </span>
+ 6095 │ │             </div>
+ 6096 │ │           </div>
+ 6097 │ │         )}
+ 6098 │ │   
+ 6099 │ │         <Card className="mb-6">
+ 6100 │ │           <CardHeader className="flex flex-row items-center justify-between p-4">
+ 6101 │ │             <div>
+ 6102 │ │               {/* Title always visible */}
+ 6103 │ │               <CardTitle className="text-xl">Basic Information</CardTitle>
+ 6104 │ │   
+ 6105 │ │               {/* Description only shows when visible */}
+ 6106 │ │               {isBasicInfoVisible && (
+ 6107 │ │                 <CardDescription>
+ 6108 │ │                   Enter quotation details and select customer
+ 6109 │ │                 </CardDescription>
+ 6110 │ │               )}
+ 6111 │ │             </div>
+ 6112 │ │             <Button
+ 6113 │ │               variant="ghost"
+ 6114 │ │               size="sm"
+ 6115 │ │               onClick={() => setIsBasicInfoVisible(!isBasicInfoVisible)}
+ 6116 │ │               className="h-8 w-8 p-0"
+ 6117 │ │             >
+ 6118 │ │               {isBasicInfoVisible ? (
+ 6119 │ │                 <ChevronUp className="h-4 w-4" />
+ 6120 │ │               ) : (
+ 6121 │ │                 <ChevronDown className="h-4 w-4" />
+ 6122 │ │               )}
+ 6123 │ │             </Button>
+ 6124 │ │           </CardHeader>
+ 6125 │ │   
+ 6126 │ │           {/* Content with smooth collapse */}
+ 6127 │ │           <div
+ 6128 │ │             className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6129 │ │               isBasicInfoVisible
+ 6130 │ │                 ? "max-h-[500px] opacity-100"
+ 6131 │ │                 : "max-h-0 opacity-0"
+ 6132 │ │             }`}
+ 6133 │ │           >
+ 6134 │ │             <CardContent className="p-6 pt-0">
+ 6135 │ │               <div className="grid grid-cols-2 gap-6">
+ 6136 │ │                 <div className="space-y-4">
+ 6137 │ │                   <div className="space-y-2">
+ 6138 │ │                     <Label htmlFor="quotationNumber">Quotation Number</Label>
+ 6139 │ │                     <Input
+ 6140 │ │                       id="quotationNumber"
+ 6141 │ │                       value={quotationData.quotationNumber}
+ 6142 │ │                       onChange={(e) =>
+ 6143 │ │                         setQuotationData((prev) => ({
+ 6144 │ │                           ...prev,
+ 6145 │ │                           quotationNumber: e.target.value,
+ 6146 │ │                         }))
+ 6147 │ │                       }
+ 6148 │ │                     />
+ 6149 │ │                   </div>
+ 6150 │ │                   <div className="space-y-2">
+ 6151 │ │                     <Label htmlFor="customer">Customer</Label>
+ 6152 │ │                     <Select
+ 6153 │ │                       value={quotationData.customerId}
+ 6154 │ │                       onValueChange={(value) =>
+ 6155 │ │                         setQuotationData((prev) => ({
+ 6156 │ │                           ...prev,
+ 6157 │ │                           customerId: value,
+ 6158 │ │                         }))
+ 6159 │ │                       }
+ 6160 │ │                       disabled={customersLoading}
+ 6161 │ │                     >
+ 6162 │ │                       <SelectTrigger>
+ 6163 │ │                         <SelectValue
+ 6164 │ │                           placeholder={
+ 6165 │ │                             customersLoading
+ 6166 │ │                               ? "Loading customers..."
+ 6167 │ │                               : "Select a customer"
+ 6168 │ │                           }
+ 6169 │ │                         />
+ 6170 │ │                       </SelectTrigger>
+ 6171 │ │                       <SelectContent>
+ 6172 │ │                         {customers.map((customer) => (
+ 6173 │ │                           <SelectItem key={customer.id} value={customer.id}>
+ 6174 │ │                             {customer.companyName} -{" "}
+ 6175 │ │                             {customer.primaryContact.name}
+ 6176 │ │                           </SelectItem>
+ 6177 │ │                         ))}
+ 6178 │ │                       </SelectContent>
+ 6179 │ │                     </Select>
+ 6180 │ │                     {customersLoading && (
+ 6181 │ │                       <p className="text-sm text-gray-500 flex items-center">
+ 6182 │ │                         <Loader2 className="h-3 w-3 animate-spin mr-1" />
+ 6183 │ │                         Loading customers...
+ 6184 │ │                       </p>
+ 6185 │ │                     )}
+ 6186 │ │                   </div>
+ 6187 │ │                 </div>
+ 6188 │ │                 <div className="space-y-4">
+ 6189 │ │                   <div className="space-y-2">
+ 6190 │ │                     <Label htmlFor="issueDate">Issue Date</Label>
+ 6191 │ │                     <Input
+ 6192 │ │                       id="issueDate"
+ 6193 │ │                       type="date"
+ 6194 │ │                       value={quotationData.issueDate}
+ 6195 │ │                       onChange={(e) =>
+ 6196 │ │                         setQuotationData((prev) => ({
+ 6197 │ │                           ...prev,
+ 6198 │ │                           issueDate: e.target.value,
+ 6199 │ │                         }))
+ 6200 │ │                       }
+ 6201 │ │                     />
+ 6202 │ │                   </div>
+ 6203 │ │                   <div className="space-y-2">
+ 6204 │ │                     <Label htmlFor="validUntil">Valid Until</Label>
+ 6205 │ │                     <Input
+ 6206 │ │                       id="validUntil"
+ 6207 │ │                       type="date"
+ 6208 │ │                       value={quotationData.validUntil}
+ 6209 │ │                       onChange={(e) =>
+ 6210 │ │                         setQuotationData((prev) => ({
+ 6211 │ │                           ...prev,
+ 6212 │ │                           validUntil: e.target.value,
+ 6213 │ │                         }))
+ 6214 │ │                       }
+ 6215 │ │                     />
+ 6216 │ │                   </div>
+ 6217 │ │                 </div>
+ 6218 │ │               </div>
+ 6219 │ │             </CardContent>
+ 6220 │ │           </div>
+ 6221 │ │         </Card>
+ 6222 │ │   
+ 6223 │ │         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+ 6224 │ │           {/* Main sections content with responsive width */}
+ 6225 │ │           <div
+ 6226 │ │             className={`lg:col-span-4 space-y-6 transition-all duration-300 ease-in-out`}
+ 6227 │ │           >
+ 6228 │ │             {sections
+ 6229 │ │               .filter((section) => section.enabled)
+ 6230 │ │               .map((section) => (
+ 6231 │ │                 <Card key={section.id}>
+ 6232 │ │                   <CardHeader>
+ 6233 │ │                     <div className="flex items-center justify-between">
+ 6234 │ │                       <div className="flex items-center space-x-3">
+ 6235 │ │                         <Eye className="h-5 w-5 text-green-600" />
+ 6236 │ │                         <div>
+ 6237 │ │                           <CardTitle className="text-xl">
+ 6238 │ │                             {section.title}
+ 6239 │ │                           </CardTitle>
+ 6240 │ │                           <CardDescription>
+ 6241 │ │                             Section {section.order} • Enabled for PDF
+ 6242 │ │                           </CardDescription>
+ 6243 │ │                         </div>
+ 6244 │ │                       </div>
+ 6245 │ │                       <Badge variant="default">PDF</Badge>
+ 6246 │ │                     </div>
+ 6247 │ │                   </CardHeader>
+ 6248 │ │                   <CardContent>{renderSection(section)}</CardContent>
+ 6249 │ │                 </Card>
+ 6250 │ │               ))}
+ 6251 │ │           </div>
+ 6252 │ │         </div>
+ 6253 │ │   
+ 6254 │ │         {/* Bottom Action Buttons */}
+ 6255 │ │         <div className="fixed bottom-6 right-6 flex gap-3 bg-white p-4 rounded-lg shadow-lg border">
+ 6256 │ │           <Button
+ 6257 │ │             variant="outline"
+ 6258 │ │             onClick={saveAsDraft}
+ 6259 │ │             disabled={loadingStates.saveDraft}
+ 6260 │ │           >
+ 6261 │ │             {loadingStates.saveDraft ? (
+ 6262 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6263 │ │             ) : (
+ 6264 │ │               <Save className="h-4 w-4 mr-2" />
+ 6265 │ │             )}
+ 6266 │ │             Save Draft
+ 6267 │ │           </Button>
+ 6268 │ │   
+ 6269 │ │           <Button onClick={saveQuotation} disabled={loadingStates.saveQuotation}>
+ 6270 │ │             {loadingStates.saveQuotation ? (
+ 6271 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6272 │ │             ) : (
+ 6273 │ │               <FileCheck className="h-4 w-4 mr-2" />
+ 6274 │ │             )}
+ 6275 │ │             Save Quotation
+ 6276 │ │           </Button>
+ 6277 │ │         </div>
+ 6278 │ │       </div>
+ 6279 │ ╰─▶   );
+ 6280 │     }
+      ╰────
+  × Expression expected
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:6280:1]
+ 6277 │       </div>
+ 6278 │     </div>
+ 6279 │   );
+ 6280 │ }
+      · ─
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[01:31:02.158] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Return statement is not allowed here
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:5902:1]
+ 5899 │         }
+ 5900 │       };
+ 5901 │     
+ 5902 │ ╭─▶   return (
+ 5903 │ │       <div className="space-y-6">
+ 5904 │ │         <div className="bg-linear-to-r from-red-600 to-red-700 rounded-xl p-6 shadow-lg">
+ 5905 │ │           <div className="flex items-center justify-between">
+ 5906 │ │             <div>
+ 5907 │ │               <h1 className="text-3xl font-bold text-white">
+ 5908 │ │                 {isEditing ? "Edit Quotation" : "Create Professional Proposal"}
+ 5909 │ │               </h1>
+ 5910 │ │               <p className="text-red-100 mt-1 text-lg">
+ 5911 │ │                 {isEditing
+ 5912 │ │                   ? `Editing: ${quotationData.quotationNumber}`
+ 5913 │ │                   : "Build comprehensive proposals with 10 customizable sections"}
+ 5914 │ │               </p>
+ 5915 │ │               {savedQuotationId && (
+ 5916 │ │                 <p className="text-red-200 text-sm mt-1">
+ 5917 │ │                   Saved as: {savedQuotationId}
+ 5918 │ │                 </p>
+ 5919 │ │               )}
+ 5920 │ │             </div>
+ 5921 │ │             <div className="flex gap-3">
+ 5922 │ │               <Button
+ 5923 │ │                 variant="outline"
+ 5924 │ │                 className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+ 5925 │ │                 onClick={saveAsDraft}
+ 5926 │ │                 disabled={loadingStates.saveDraft || customersLoading}
+ 5927 │ │               >
+ 5928 │ │                 {loadingStates.saveDraft ? (
+ 5929 │ │                   <>
+ 5930 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5931 │ │                     Saving...
+ 5932 │ │                   </>
+ 5933 │ │                 ) : (
+ 5934 │ │                   <>
+ 5935 │ │                     <Save className="h-4 w-4 mr-2" />
+ 5936 │ │                     Save Draft
+ 5937 │ │                   </>
+ 5938 │ │                 )}
+ 5939 │ │               </Button>
+ 5940 │ │   
+ 5941 │ │               <Button
+ 5942 │ │                 className="bg-blue-600 hover:bg-blue-700 text-white"
+ 5943 │ │                 onClick={saveQuotation}
+ 5944 │ │                 disabled={loadingStates.saveQuotation || customersLoading}
+ 5945 │ │               >
+ 5946 │ │                 {loadingStates.saveQuotation ? (
+ 5947 │ │                   <>
+ 5948 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5949 │ │                     Saving...
+ 5950 │ │                   </>
+ 5951 │ │                 ) : (
+ 5952 │ │                   <>
+ 5953 │ │                     <FileCheck className="h-4 w-4 mr-2" />
+ 5954 │ │                     Save Quotation
+ 5955 │ │                   </>
+ 5956 │ │                 )}
+ 5957 │ │               </Button>
+ 5958 │ │   
+ 5959 │ │               <Button
+ 5960 │ │                 className="bg-white text-red-600 hover:bg-red-50"
+ 5961 │ │                 onClick={generatePDF}
+ 5962 │ │                 disabled={loadingStates.generatePDF}
+ 5963 │ │               >
+ 5964 │ │                 {loadingStates.generatePDF ? (
+ 5965 │ │                   <>
+ 5966 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5967 │ │                     Generating...
+ 5968 │ │                   </>
+ 5969 │ │                 ) : (
+ 5970 │ │                   <>
+ 5971 │ │                     <Download className="h-4 w-4 mr-2" />
+ 5972 │ │                     Generate PDF
+ 5973 │ │                   </>
+ 5974 │ │                 )}
+ 5975 │ │               </Button>
+ 5976 │ │             </div>
+ 5977 │ │           </div>
+ 5978 │ │         </div>
+ 5979 │ │   
+ 5980 │ │         {/* Template Selector and Proposal Sections in one row */}
+ 5981 │ │         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+ 5982 │ │           {/* Template Selector - Takes 3 columns */}
+ 5983 │ │           <div className="lg:col-span-3">
+ 5984 │ │             <TemplateSelector />
+ 5985 │ │           </div>
+ 5986 │ │   
+ 5987 │ │           {/* Proposal Sections - Takes 9 columns (collapsed state ke hisab se adjust) */}
+ 5988 │ │           <div className="lg:col-span-9">
+ 5989 │ │        <Card className="w-full">
+ 5990 │ │     <CardHeader className="flex flex-row items-center justify-between p-3">
+ 5991 │ │       <div>
+ 5992 │ │         <CardTitle className="text-base">Sections</CardTitle>
+ 5993 │ │         {isProposalSectionsVisible && (
+ 5994 │ │           <CardDescription className="text-xs">
+ 5995 │ │             Click eye to toggle sections
+ 5996 │ │           </CardDescription>
+ 5997 │ │         )}
+ 5998 │ │       </div>
+ 5999 │ │       <Button
+ 6000 │ │         variant="ghost"
+ 6001 │ │         size="icon"
+ 6002 │ │         onClick={() => setIsProposalSectionsVisible(!isProposalSectionsVisible)}
+ 6003 │ │         className="h-6 w-6 p-0"
+ 6004 │ │       >
+ 6005 │ │         {isProposalSectionsVisible ? (
+ 6006 │ │           <EyeOff className="h-3 w-3" />
+ 6007 │ │         ) : (
+ 6008 │ │           <Eye className="h-3 w-3" />
+ 6009 │ │         )}
+ 6010 │ │       </Button>
+ 6011 │ │     </CardHeader>
+ 6012 │ │   
+ 6013 │ │     {/* Smooth collapse/expand for Proposal Sections */}
+ 6014 │ │     <div
+ 6015 │ │       className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6016 │ │         isProposalSectionsVisible
+ 6017 │ │           ? "max-h-[320px] opacity-100"
+ 6018 │ │           : "max-h-0 opacity-0"
+ 6019 │ │       }`}
+ 6020 │ │     >
+ 6021 │ │       <CardContent className="p-2">
+ 6022 │ │         {/* ULTRA COMPACT: 2 columns grid with very small spacing */}
+ 6023 │ │         <div className="grid grid-cols-2 gap-1.5">
+ 6024 │ │           {sections.map((section, index) => (
+ 6025 │ │             <div
+ 6026 │ │               key={section.id}
+ 6027 │ │               draggable
+ 6028 │ │               onDragStart={(e) => handleDragStart(e, section.id)}
+ 6029 │ │               onDragOver={handleDragOver}
+ 6030 │ │               onDrop={(e) => handleDrop(e, section.id)}
+ 6031 │ │               className={`p-1.5 rounded-md border cursor-move transition-all flex items-center justify-between ${
+ 6032 │ │                 section.enabled
+ 6033 │ │                   ? "border-green-300 bg-green-50 hover:border-green-400"
+ 6034 │ │                   : "border-gray-200 bg-gray-50 opacity-70"
+ 6035 │ │               }`}
+ 6036 │ │             >
+ 6037 │ │               {/* Left side: Section info */}
+ 6038 │ │               <div className="flex items-center space-x-1.5 flex-1 min-w-0">
+ 6039 │ │                 <div className="w-4 h-4 flex items-center justify-center rounded bg-gray-100 text-gray-600 text-xs font-bold flex-shrink-0">
+ 6040 │ │                   {section.order}
+ 6041 │ │                 </div>
+ 6042 │ │                 <span className={`text-xs font-medium truncate ${
+ 6043 │ │                   section.enabled ? "text-gray-800" : "text-gray-500"
+ 6044 │ │                 }`}>
+ 6045 │ │                   {section.title.split(" ")[0]}
+ 6046 │ │                 </span>
+ 6047 │ │               </div>
+ 6048 │ │               
+ 6049 │ │               {/* Right side: Controls */}
+ 6050 │ │               <div className="flex items-center space-x-0.5 flex-shrink-0">
+ 6051 │ │                 <Button
+ 6052 │ │                   size="sm"
+ 6053 │ │                   variant="ghost"
+ 6054 │ │                   className="h-5 w-5 p-0"
+ 6055 │ │                   onClick={() => moveSection(index, Math.max(0, index - 1))}
+ 6056 │ │                   disabled={index === 0}
+ 6057 │ │                 >
+ 6058 │ │                   <ArrowUp className="h-2 w-2" />
+ 6059 │ │                 </Button>
+ 6060 │ │                 <Button
+ 6061 │ │                   size="sm"
+ 6062 │ │                   variant="ghost"
+ 6063 │ │                   className="h-5 w-5 p-0"
+ 6064 │ │                   onClick={() => moveSection(index, Math.min(sections.length - 1, index + 1))}
+ 6065 │ │                   disabled={index === sections.length - 1}
+ 6066 │ │                 >
+ 6067 │ │                   <ArrowDown className="h-2 w-2" />
+ 6068 │ │                 </Button>
+ 6069 │ │                 <Checkbox
+ 6070 │ │                   checked={section.enabled}
+ 6071 │ │                   onCheckedChange={() => toggleSection(section.id)}
+ 6072 │ │                   className="h-3 w-3 ml-0.5"
+ 6073 │ │                 />
+ 6074 │ │               </div>
+ 6075 │ │             </div>
+ 6076 │ │           ))}
+ 6077 │ │         </div>
+ 6078 │ │         
+ 6079 │ │         
+ 6080 │ │       </CardContent>
+ 6081 │ │     </div>
+ 6082 │ │   </Card>
+ 6083 │ │           </div>
+ 6084 │ │        </div>
+ 6085 │ │   
+ 6086 │ │         {customersError && (
+ 6087 │ │           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+ 6088 │ │             <div className="flex items-center">
+ 6089 │ │               <AlertTriangle className="h-5 w-5 text-yellow-600 mr-2" />
+ 6090 │ │               <span className="text-yellow-800 text-sm">
+ 6091 │ │                 {customersError.includes("index")
+ 6092 │ │                   ? "Optimizing customer data loading... Please wait a few minutes."
+ 6093 │ │                   : customersError}
+ 6094 │ │               </span>
+ 6095 │ │             </div>
+ 6096 │ │           </div>
+ 6097 │ │         )}
+ 6098 │ │   
+ 6099 │ │         <Card className="mb-6">
+ 6100 │ │           <CardHeader className="flex flex-row items-center justify-between p-4">
+ 6101 │ │             <div>
+ 6102 │ │               {/* Title always visible */}
+ 6103 │ │               <CardTitle className="text-xl">Basic Information</CardTitle>
+ 6104 │ │   
+ 6105 │ │               {/* Description only shows when visible */}
+ 6106 │ │               {isBasicInfoVisible && (
+ 6107 │ │                 <CardDescription>
+ 6108 │ │                   Enter quotation details and select customer
+ 6109 │ │                 </CardDescription>
+ 6110 │ │               )}
+ 6111 │ │             </div>
+ 6112 │ │             <Button
+ 6113 │ │               variant="ghost"
+ 6114 │ │               size="sm"
+ 6115 │ │               onClick={() => setIsBasicInfoVisible(!isBasicInfoVisible)}
+ 6116 │ │               className="h-8 w-8 p-0"
+ 6117 │ │             >
+ 6118 │ │               {isBasicInfoVisible ? (
+ 6119 │ │                 <ChevronUp className="h-4 w-4" />
+ 6120 │ │               ) : (
+ 6121 │ │                 <ChevronDown className="h-4 w-4" />
+ 6122 │ │               )}
+ 6123 │ │             </Button>
+ 6124 │ │           </CardHeader>
+ 6125 │ │   
+ 6126 │ │           {/* Content with smooth collapse */}
+ 6127 │ │           <div
+ 6128 │ │             className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6129 │ │               isBasicInfoVisible
+ 6130 │ │                 ? "max-h-[500px] opacity-100"
+ 6131 │ │                 : "max-h-0 opacity-0"
+ 6132 │ │             }`}
+ 6133 │ │           >
+ 6134 │ │             <CardContent className="p-6 pt-0">
+ 6135 │ │               <div className="grid grid-cols-2 gap-6">
+ 6136 │ │                 <div className="space-y-4">
+ 6137 │ │                   <div className="space-y-2">
+ 6138 │ │                     <Label htmlFor="quotationNumber">Quotation Number</Label>
+ 6139 │ │                     <Input
+ 6140 │ │                       id="quotationNumber"
+ 6141 │ │                       value={quotationData.quotationNumber}
+ 6142 │ │                       onChange={(e) =>
+ 6143 │ │                         setQuotationData((prev) => ({
+ 6144 │ │                           ...prev,
+ 6145 │ │                           quotationNumber: e.target.value,
+ 6146 │ │                         }))
+ 6147 │ │                       }
+ 6148 │ │                     />
+ 6149 │ │                   </div>
+ 6150 │ │                   <div className="space-y-2">
+ 6151 │ │                     <Label htmlFor="customer">Customer</Label>
+ 6152 │ │                     <Select
+ 6153 │ │                       value={quotationData.customerId}
+ 6154 │ │                       onValueChange={(value) =>
+ 6155 │ │                         setQuotationData((prev) => ({
+ 6156 │ │                           ...prev,
+ 6157 │ │                           customerId: value,
+ 6158 │ │                         }))
+ 6159 │ │                       }
+ 6160 │ │                       disabled={customersLoading}
+ 6161 │ │                     >
+ 6162 │ │                       <SelectTrigger>
+ 6163 │ │                         <SelectValue
+ 6164 │ │                           placeholder={
+ 6165 │ │                             customersLoading
+ 6166 │ │                               ? "Loading customers..."
+ 6167 │ │                               : "Select a customer"
+ 6168 │ │                           }
+ 6169 │ │                         />
+ 6170 │ │                       </SelectTrigger>
+ 6171 │ │                       <SelectContent>
+ 6172 │ │                         {customers.map((customer) => (
+ 6173 │ │                           <SelectItem key={customer.id} value={customer.id}>
+ 6174 │ │                             {customer.companyName} -{" "}
+ 6175 │ │                             {customer.primaryContact.name}
+ 6176 │ │                           </SelectItem>
+ 6177 │ │                         ))}
+ 6178 │ │                       </SelectContent>
+ 6179 │ │                     </Select>
+ 6180 │ │                     {customersLoading && (
+ 6181 │ │                       <p className="text-sm text-gray-500 flex items-center">
+ 6182 │ │                         <Loader2 className="h-3 w-3 animate-spin mr-1" />
+ 6183 │ │                         Loading customers...
+ 6184 │ │                       </p>
+ 6185 │ │                     )}
+ 6186 │ │                   </div>
+ 6187 │ │                 </div>
+ 6188 │ │                 <div className="space-y-4">
+ 6189 │ │                   <div className="space-y-2">
+ 6190 │ │                     <Label htmlFor="issueDate">Issue Date</Label>
+ 6191 │ │                     <Input
+ 6192 │ │                       id="issueDate"
+ 6193 │ │                       type="date"
+ 6194 │ │                       value={quotationData.issueDate}
+ 6195 │ │                       onChange={(e) =>
+ 6196 │ │                         setQuotationData((prev) => ({
+ 6197 │ │                           ...prev,
+ 6198 │ │                           issueDate: e.target.value,
+ 6199 │ │                         }))
+ 6200 │ │                       }
+ 6201 │ │                     />
+ 6202 │ │                   </div>
+ 6203 │ │                   <div className="space-y-2">
+ 6204 │ │                     <Label htmlFor="validUntil">Valid Until</Label>
+ 6205 │ │                     <Input
+ 6206 │ │                       id="validUntil"
+ 6207 │ │                       type="date"
+ 6208 │ │                       value={quotationData.validUntil}
+ 6209 │ │                       onChange={(e) =>
+ 6210 │ │                         setQuotationData((prev) => ({
+ 6211 │ │                           ...prev,
+ 6212 │ │                           validUntil: e.target.value,
+ 6213 │ │                         }))
+ 6214 │ │                       }
+ 6215 │ │                     />
+ 6216 │ │                   </div>
+ 6217 │ │                 </div>
+ 6218 │ │               </div>
+ 6219 │ │             </CardContent>
+ 6220 │ │           </div>
+ 6221 │ │         </Card>
+ 6222 │ │   
+ 6223 │ │         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+ 6224 │ │           {/* Main sections content with responsive width */}
+ 6225 │ │           <div
+ 6226 │ │             className={`lg:col-span-4 space-y-6 transition-all duration-300 ease-in-out`}
+ 6227 │ │           >
+ 6228 │ │             {sections
+ 6229 │ │               .filter((section) => section.enabled)
+ 6230 │ │               .map((section) => (
+ 6231 │ │                 <Card key={section.id}>
+ 6232 │ │                   <CardHeader>
+ 6233 │ │                     <div className="flex items-center justify-between">
+ 6234 │ │                       <div className="flex items-center space-x-3">
+ 6235 │ │                         <Eye className="h-5 w-5 text-green-600" />
+ 6236 │ │                         <div>
+ 6237 │ │                           <CardTitle className="text-xl">
+ 6238 │ │                             {section.title}
+ 6239 │ │                           </CardTitle>
+ 6240 │ │                           <CardDescription>
+ 6241 │ │                             Section {section.order} • Enabled for PDF
+ 6242 │ │                           </CardDescription>
+ 6243 │ │                         </div>
+ 6244 │ │                       </div>
+ 6245 │ │                       <Badge variant="default">PDF</Badge>
+ 6246 │ │                     </div>
+ 6247 │ │                   </CardHeader>
+ 6248 │ │                   <CardContent>{renderSection(section)}</CardContent>
+ 6249 │ │                 </Card>
+ 6250 │ │               ))}
+ 6251 │ │           </div>
+ 6252 │ │         </div>
+ 6253 │ │   
+ 6254 │ │         {/* Bottom Action Buttons */}
+ 6255 │ │         <div className="fixed bottom-6 right-6 flex gap-3 bg-white p-4 rounded-lg shadow-lg border">
+ 6256 │ │           <Button
+ 6257 │ │             variant="outline"
+ 6258 │ │             onClick={saveAsDraft}
+ 6259 │ │             disabled={loadingStates.saveDraft}
+ 6260 │ │           >
+ 6261 │ │             {loadingStates.saveDraft ? (
+ 6262 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6263 │ │             ) : (
+ 6264 │ │               <Save className="h-4 w-4 mr-2" />
+ 6265 │ │             )}
+ 6266 │ │             Save Draft
+ 6267 │ │           </Button>
+ 6268 │ │   
+ 6269 │ │           <Button onClick={saveQuotation} disabled={loadingStates.saveQuotation}>
+ 6270 │ │             {loadingStates.saveQuotation ? (
+ 6271 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6272 │ │             ) : (
+ 6273 │ │               <FileCheck className="h-4 w-4 mr-2" />
+ 6274 │ │             )}
+ 6275 │ │             Save Quotation
+ 6276 │ │           </Button>
+ 6277 │ │         </div>
+ 6278 │ │       </div>
+ 6279 │ ╰─▶   );
+ 6280 │     }
+      ╰────
+  × Expression expected
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:6280:1]
+ 6277 │       </div>
+ 6278 │     </div>
+ 6279 │   );
+ 6280 │ }
+      · ─
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[01:31:03.358] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Return statement is not allowed here
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:5902:1]
+ 5899 │         }
+ 5900 │       };
+ 5901 │     
+ 5902 │ ╭─▶   return (
+ 5903 │ │       <div className="space-y-6">
+ 5904 │ │         <div className="bg-linear-to-r from-red-600 to-red-700 rounded-xl p-6 shadow-lg">
+ 5905 │ │           <div className="flex items-center justify-between">
+ 5906 │ │             <div>
+ 5907 │ │               <h1 className="text-3xl font-bold text-white">
+ 5908 │ │                 {isEditing ? "Edit Quotation" : "Create Professional Proposal"}
+ 5909 │ │               </h1>
+ 5910 │ │               <p className="text-red-100 mt-1 text-lg">
+ 5911 │ │                 {isEditing
+ 5912 │ │                   ? `Editing: ${quotationData.quotationNumber}`
+ 5913 │ │                   : "Build comprehensive proposals with 10 customizable sections"}
+ 5914 │ │               </p>
+ 5915 │ │               {savedQuotationId && (
+ 5916 │ │                 <p className="text-red-200 text-sm mt-1">
+ 5917 │ │                   Saved as: {savedQuotationId}
+ 5918 │ │                 </p>
+ 5919 │ │               )}
+ 5920 │ │             </div>
+ 5921 │ │             <div className="flex gap-3">
+ 5922 │ │               <Button
+ 5923 │ │                 variant="outline"
+ 5924 │ │                 className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+ 5925 │ │                 onClick={saveAsDraft}
+ 5926 │ │                 disabled={loadingStates.saveDraft || customersLoading}
+ 5927 │ │               >
+ 5928 │ │                 {loadingStates.saveDraft ? (
+ 5929 │ │                   <>
+ 5930 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5931 │ │                     Saving...
+ 5932 │ │                   </>
+ 5933 │ │                 ) : (
+ 5934 │ │                   <>
+ 5935 │ │                     <Save className="h-4 w-4 mr-2" />
+ 5936 │ │                     Save Draft
+ 5937 │ │                   </>
+ 5938 │ │                 )}
+ 5939 │ │               </Button>
+ 5940 │ │   
+ 5941 │ │               <Button
+ 5942 │ │                 className="bg-blue-600 hover:bg-blue-700 text-white"
+ 5943 │ │                 onClick={saveQuotation}
+ 5944 │ │                 disabled={loadingStates.saveQuotation || customersLoading}
+ 5945 │ │               >
+ 5946 │ │                 {loadingStates.saveQuotation ? (
+ 5947 │ │                   <>
+ 5948 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5949 │ │                     Saving...
+ 5950 │ │                   </>
+ 5951 │ │                 ) : (
+ 5952 │ │                   <>
+ 5953 │ │                     <FileCheck className="h-4 w-4 mr-2" />
+ 5954 │ │                     Save Quotation
+ 5955 │ │                   </>
+ 5956 │ │                 )}
+ 5957 │ │               </Button>
+ 5958 │ │   
+ 5959 │ │               <Button
+ 5960 │ │                 className="bg-white text-red-600 hover:bg-red-50"
+ 5961 │ │                 onClick={generatePDF}
+ 5962 │ │                 disabled={loadingStates.generatePDF}
+ 5963 │ │               >
+ 5964 │ │                 {loadingStates.generatePDF ? (
+ 5965 │ │                   <>
+ 5966 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5967 │ │                     Generating...
+ 5968 │ │                   </>
+ 5969 │ │                 ) : (
+ 5970 │ │                   <>
+ 5971 │ │                     <Download className="h-4 w-4 mr-2" />
+ 5972 │ │                     Generate PDF
+ 5973 │ │                   </>
+ 5974 │ │                 )}
+ 5975 │ │               </Button>
+ 5976 │ │             </div>
+ 5977 │ │           </div>
+ 5978 │ │         </div>
+ 5979 │ │   
+ 5980 │ │         {/* Template Selector and Proposal Sections in one row */}
+ 5981 │ │         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+ 5982 │ │           {/* Template Selector - Takes 3 columns */}
+ 5983 │ │           <div className="lg:col-span-3">
+ 5984 │ │             <TemplateSelector />
+ 5985 │ │           </div>
+ 5986 │ │   
+ 5987 │ │           {/* Proposal Sections - Takes 9 columns (collapsed state ke hisab se adjust) */}
+ 5988 │ │           <div className="lg:col-span-9">
+ 5989 │ │        <Card className="w-full">
+ 5990 │ │     <CardHeader className="flex flex-row items-center justify-between p-3">
+ 5991 │ │       <div>
+ 5992 │ │         <CardTitle className="text-base">Sections</CardTitle>
+ 5993 │ │         {isProposalSectionsVisible && (
+ 5994 │ │           <CardDescription className="text-xs">
+ 5995 │ │             Click eye to toggle sections
+ 5996 │ │           </CardDescription>
+ 5997 │ │         )}
+ 5998 │ │       </div>
+ 5999 │ │       <Button
+ 6000 │ │         variant="ghost"
+ 6001 │ │         size="icon"
+ 6002 │ │         onClick={() => setIsProposalSectionsVisible(!isProposalSectionsVisible)}
+ 6003 │ │         className="h-6 w-6 p-0"
+ 6004 │ │       >
+ 6005 │ │         {isProposalSectionsVisible ? (
+ 6006 │ │           <EyeOff className="h-3 w-3" />
+ 6007 │ │         ) : (
+ 6008 │ │           <Eye className="h-3 w-3" />
+ 6009 │ │         )}
+ 6010 │ │       </Button>
+ 6011 │ │     </CardHeader>
+ 6012 │ │   
+ 6013 │ │     {/* Smooth collapse/expand for Proposal Sections */}
+ 6014 │ │     <div
+ 6015 │ │       className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6016 │ │         isProposalSectionsVisible
+ 6017 │ │           ? "max-h-[320px] opacity-100"
+ 6018 │ │           : "max-h-0 opacity-0"
+ 6019 │ │       }`}
+ 6020 │ │     >
+ 6021 │ │       <CardContent className="p-2">
+ 6022 │ │         {/* ULTRA COMPACT: 2 columns grid with very small spacing */}
+ 6023 │ │         <div className="grid grid-cols-2 gap-1.5">
+ 6024 │ │           {sections.map((section, index) => (
+ 6025 │ │             <div
+ 6026 │ │               key={section.id}
+ 6027 │ │               draggable
+ 6028 │ │               onDragStart={(e) => handleDragStart(e, section.id)}
+ 6029 │ │               onDragOver={handleDragOver}
+ 6030 │ │               onDrop={(e) => handleDrop(e, section.id)}
+ 6031 │ │               className={`p-1.5 rounded-md border cursor-move transition-all flex items-center justify-between ${
+ 6032 │ │                 section.enabled
+ 6033 │ │                   ? "border-green-300 bg-green-50 hover:border-green-400"
+ 6034 │ │                   : "border-gray-200 bg-gray-50 opacity-70"
+ 6035 │ │               }`}
+ 6036 │ │             >
+ 6037 │ │               {/* Left side: Section info */}
+ 6038 │ │               <div className="flex items-center space-x-1.5 flex-1 min-w-0">
+ 6039 │ │                 <div className="w-4 h-4 flex items-center justify-center rounded bg-gray-100 text-gray-600 text-xs font-bold flex-shrink-0">
+ 6040 │ │                   {section.order}
+ 6041 │ │                 </div>
+ 6042 │ │                 <span className={`text-xs font-medium truncate ${
+ 6043 │ │                   section.enabled ? "text-gray-800" : "text-gray-500"
+ 6044 │ │                 }`}>
+ 6045 │ │                   {section.title.split(" ")[0]}
+ 6046 │ │                 </span>
+ 6047 │ │               </div>
+ 6048 │ │               
+ 6049 │ │               {/* Right side: Controls */}
+ 6050 │ │               <div className="flex items-center space-x-0.5 flex-shrink-0">
+ 6051 │ │                 <Button
+ 6052 │ │                   size="sm"
+ 6053 │ │                   variant="ghost"
+ 6054 │ │                   className="h-5 w-5 p-0"
+ 6055 │ │                   onClick={() => moveSection(index, Math.max(0, index - 1))}
+ 6056 │ │                   disabled={index === 0}
+ 6057 │ │                 >
+ 6058 │ │                   <ArrowUp className="h-2 w-2" />
+ 6059 │ │                 </Button>
+ 6060 │ │                 <Button
+ 6061 │ │                   size="sm"
+ 6062 │ │                   variant="ghost"
+ 6063 │ │                   className="h-5 w-5 p-0"
+ 6064 │ │                   onClick={() => moveSection(index, Math.min(sections.length - 1, index + 1))}
+ 6065 │ │                   disabled={index === sections.length - 1}
+ 6066 │ │                 >
+ 6067 │ │                   <ArrowDown className="h-2 w-2" />
+ 6068 │ │                 </Button>
+ 6069 │ │                 <Checkbox
+ 6070 │ │                   checked={section.enabled}
+ 6071 │ │                   onCheckedChange={() => toggleSection(section.id)}
+ 6072 │ │                   className="h-3 w-3 ml-0.5"
+ 6073 │ │                 />
+ 6074 │ │               </div>
+ 6075 │ │             </div>
+ 6076 │ │           ))}
+ 6077 │ │         </div>
+ 6078 │ │         
+ 6079 │ │         
+ 6080 │ │       </CardContent>
+ 6081 │ │     </div>
+ 6082 │ │   </Card>
+ 6083 │ │           </div>
+ 6084 │ │        </div>
+ 6085 │ │   
+ 6086 │ │         {customersError && (
+ 6087 │ │           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+ 6088 │ │             <div className="flex items-center">
+ 6089 │ │               <AlertTriangle className="h-5 w-5 text-yellow-600 mr-2" />
+ 6090 │ │               <span className="text-yellow-800 text-sm">
+ 6091 │ │                 {customersError.includes("index")
+ 6092 │ │                   ? "Optimizing customer data loading... Please wait a few minutes."
+ 6093 │ │                   : customersError}
+ 6094 │ │               </span>
+ 6095 │ │             </div>
+ 6096 │ │           </div>
+ 6097 │ │         )}
+ 6098 │ │   
+ 6099 │ │         <Card className="mb-6">
+ 6100 │ │           <CardHeader className="flex flex-row items-center justify-between p-4">
+ 6101 │ │             <div>
+ 6102 │ │               {/* Title always visible */}
+ 6103 │ │               <CardTitle className="text-xl">Basic Information</CardTitle>
+ 6104 │ │   
+ 6105 │ │               {/* Description only shows when visible */}
+ 6106 │ │               {isBasicInfoVisible && (
+ 6107 │ │                 <CardDescription>
+ 6108 │ │                   Enter quotation details and select customer
+ 6109 │ │                 </CardDescription>
+ 6110 │ │               )}
+ 6111 │ │             </div>
+ 6112 │ │             <Button
+ 6113 │ │               variant="ghost"
+ 6114 │ │               size="sm"
+ 6115 │ │               onClick={() => setIsBasicInfoVisible(!isBasicInfoVisible)}
+ 6116 │ │               className="h-8 w-8 p-0"
+ 6117 │ │             >
+ 6118 │ │               {isBasicInfoVisible ? (
+ 6119 │ │                 <ChevronUp className="h-4 w-4" />
+ 6120 │ │               ) : (
+ 6121 │ │                 <ChevronDown className="h-4 w-4" />
+ 6122 │ │               )}
+ 6123 │ │             </Button>
+ 6124 │ │           </CardHeader>
+ 6125 │ │   
+ 6126 │ │           {/* Content with smooth collapse */}
+ 6127 │ │           <div
+ 6128 │ │             className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6129 │ │               isBasicInfoVisible
+ 6130 │ │                 ? "max-h-[500px] opacity-100"
+ 6131 │ │                 : "max-h-0 opacity-0"
+ 6132 │ │             }`}
+ 6133 │ │           >
+ 6134 │ │             <CardContent className="p-6 pt-0">
+ 6135 │ │               <div className="grid grid-cols-2 gap-6">
+ 6136 │ │                 <div className="space-y-4">
+ 6137 │ │                   <div className="space-y-2">
+ 6138 │ │                     <Label htmlFor="quotationNumber">Quotation Number</Label>
+ 6139 │ │                     <Input
+ 6140 │ │                       id="quotationNumber"
+ 6141 │ │                       value={quotationData.quotationNumber}
+ 6142 │ │                       onChange={(e) =>
+ 6143 │ │                         setQuotationData((prev) => ({
+ 6144 │ │                           ...prev,
+ 6145 │ │                           quotationNumber: e.target.value,
+ 6146 │ │                         }))
+ 6147 │ │                       }
+ 6148 │ │                     />
+ 6149 │ │                   </div>
+ 6150 │ │                   <div className="space-y-2">
+ 6151 │ │                     <Label htmlFor="customer">Customer</Label>
+ 6152 │ │                     <Select
+ 6153 │ │                       value={quotationData.customerId}
+ 6154 │ │                       onValueChange={(value) =>
+ 6155 │ │                         setQuotationData((prev) => ({
+ 6156 │ │                           ...prev,
+ 6157 │ │                           customerId: value,
+ 6158 │ │                         }))
+ 6159 │ │                       }
+ 6160 │ │                       disabled={customersLoading}
+ 6161 │ │                     >
+ 6162 │ │                       <SelectTrigger>
+ 6163 │ │                         <SelectValue
+ 6164 │ │                           placeholder={
+ 6165 │ │                             customersLoading
+ 6166 │ │                               ? "Loading customers..."
+ 6167 │ │                               : "Select a customer"
+ 6168 │ │                           }
+ 6169 │ │                         />
+ 6170 │ │                       </SelectTrigger>
+ 6171 │ │                       <SelectContent>
+ 6172 │ │                         {customers.map((customer) => (
+ 6173 │ │                           <SelectItem key={customer.id} value={customer.id}>
+ 6174 │ │                             {customer.companyName} -{" "}
+ 6175 │ │                             {customer.primaryContact.name}
+ 6176 │ │                           </SelectItem>
+ 6177 │ │                         ))}
+ 6178 │ │                       </SelectContent>
+ 6179 │ │                     </Select>
+ 6180 │ │                     {customersLoading && (
+ 6181 │ │                       <p className="text-sm text-gray-500 flex items-center">
+ 6182 │ │                         <Loader2 className="h-3 w-3 animate-spin mr-1" />
+ 6183 │ │                         Loading customers...
+ 6184 │ │                       </p>
+ 6185 │ │                     )}
+ 6186 │ │                   </div>
+ 6187 │ │                 </div>
+ 6188 │ │                 <div className="space-y-4">
+ 6189 │ │                   <div className="space-y-2">
+ 6190 │ │                     <Label htmlFor="issueDate">Issue Date</Label>
+ 6191 │ │                     <Input
+ 6192 │ │                       id="issueDate"
+ 6193 │ │                       type="date"
+ 6194 │ │                       value={quotationData.issueDate}
+ 6195 │ │                       onChange={(e) =>
+ 6196 │ │                         setQuotationData((prev) => ({
+ 6197 │ │                           ...prev,
+ 6198 │ │                           issueDate: e.target.value,
+ 6199 │ │                         }))
+ 6200 │ │                       }
+ 6201 │ │                     />
+ 6202 │ │                   </div>
+ 6203 │ │                   <div className="space-y-2">
+ 6204 │ │                     <Label htmlFor="validUntil">Valid Until</Label>
+ 6205 │ │                     <Input
+ 6206 │ │                       id="validUntil"
+ 6207 │ │                       type="date"
+ 6208 │ │                       value={quotationData.validUntil}
+ 6209 │ │                       onChange={(e) =>
+ 6210 │ │                         setQuotationData((prev) => ({
+ 6211 │ │                           ...prev,
+ 6212 │ │                           validUntil: e.target.value,
+ 6213 │ │                         }))
+ 6214 │ │                       }
+ 6215 │ │                     />
+ 6216 │ │                   </div>
+ 6217 │ │                 </div>
+ 6218 │ │               </div>
+ 6219 │ │             </CardContent>
+ 6220 │ │           </div>
+ 6221 │ │         </Card>
+ 6222 │ │   
+ 6223 │ │         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+ 6224 │ │           {/* Main sections content with responsive width */}
+ 6225 │ │           <div
+ 6226 │ │             className={`lg:col-span-4 space-y-6 transition-all duration-300 ease-in-out`}
+ 6227 │ │           >
+ 6228 │ │             {sections
+ 6229 │ │               .filter((section) => section.enabled)
+ 6230 │ │               .map((section) => (
+ 6231 │ │                 <Card key={section.id}>
+ 6232 │ │                   <CardHeader>
+ 6233 │ │                     <div className="flex items-center justify-between">
+ 6234 │ │                       <div className="flex items-center space-x-3">
+ 6235 │ │                         <Eye className="h-5 w-5 text-green-600" />
+ 6236 │ │                         <div>
+ 6237 │ │                           <CardTitle className="text-xl">
+ 6238 │ │                             {section.title}
+ 6239 │ │                           </CardTitle>
+ 6240 │ │                           <CardDescription>
+ 6241 │ │                             Section {section.order} • Enabled for PDF
+ 6242 │ │                           </CardDescription>
+ 6243 │ │                         </div>
+ 6244 │ │                       </div>
+ 6245 │ │                       <Badge variant="default">PDF</Badge>
+ 6246 │ │                     </div>
+ 6247 │ │                   </CardHeader>
+ 6248 │ │                   <CardContent>{renderSection(section)}</CardContent>
+ 6249 │ │                 </Card>
+ 6250 │ │               ))}
+ 6251 │ │           </div>
+ 6252 │ │         </div>
+ 6253 │ │   
+ 6254 │ │         {/* Bottom Action Buttons */}
+ 6255 │ │         <div className="fixed bottom-6 right-6 flex gap-3 bg-white p-4 rounded-lg shadow-lg border">
+ 6256 │ │           <Button
+ 6257 │ │             variant="outline"
+ 6258 │ │             onClick={saveAsDraft}
+ 6259 │ │             disabled={loadingStates.saveDraft}
+ 6260 │ │           >
+ 6261 │ │             {loadingStates.saveDraft ? (
+ 6262 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6263 │ │             ) : (
+ 6264 │ │               <Save className="h-4 w-4 mr-2" />
+ 6265 │ │             )}
+ 6266 │ │             Save Draft
+ 6267 │ │           </Button>
+ 6268 │ │   
+ 6269 │ │           <Button onClick={saveQuotation} disabled={loadingStates.saveQuotation}>
+ 6270 │ │             {loadingStates.saveQuotation ? (
+ 6271 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6272 │ │             ) : (
+ 6273 │ │               <FileCheck className="h-4 w-4 mr-2" />
+ 6274 │ │             )}
+ 6275 │ │             Save Quotation
+ 6276 │ │           </Button>
+ 6277 │ │         </div>
+ 6278 │ │       </div>
+ 6279 │ ╰─▶   );
+ 6280 │     }
+      ╰────
+  × Expression expected
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:6280:1]
+ 6277 │       </div>
+ 6278 │     </div>
+ 6279 │   );
+ 6280 │ }
+      · ─
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[01:31:04.401] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Return statement is not allowed here
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:5902:1]
+ 5899 │         }
+ 5900 │       };
+ 5901 │     
+ 5902 │ ╭─▶   return (
+ 5903 │ │       <div className="space-y-6">
+ 5904 │ │         <div className="bg-linear-to-r from-red-600 to-red-700 rounded-xl p-6 shadow-lg">
+ 5905 │ │           <div className="flex items-center justify-between">
+ 5906 │ │             <div>
+ 5907 │ │               <h1 className="text-3xl font-bold text-white">
+ 5908 │ │                 {isEditing ? "Edit Quotation" : "Create Professional Proposal"}
+ 5909 │ │               </h1>
+ 5910 │ │               <p className="text-red-100 mt-1 text-lg">
+ 5911 │ │                 {isEditing
+ 5912 │ │                   ? `Editing: ${quotationData.quotationNumber}`
+ 5913 │ │                   : "Build comprehensive proposals with 10 customizable sections"}
+ 5914 │ │               </p>
+ 5915 │ │               {savedQuotationId && (
+ 5916 │ │                 <p className="text-red-200 text-sm mt-1">
+ 5917 │ │                   Saved as: {savedQuotationId}
+ 5918 │ │                 </p>
+ 5919 │ │               )}
+ 5920 │ │             </div>
+ 5921 │ │             <div className="flex gap-3">
+ 5922 │ │               <Button
+ 5923 │ │                 variant="outline"
+ 5924 │ │                 className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+ 5925 │ │                 onClick={saveAsDraft}
+ 5926 │ │                 disabled={loadingStates.saveDraft || customersLoading}
+ 5927 │ │               >
+ 5928 │ │                 {loadingStates.saveDraft ? (
+ 5929 │ │                   <>
+ 5930 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5931 │ │                     Saving...
+ 5932 │ │                   </>
+ 5933 │ │                 ) : (
+ 5934 │ │                   <>
+ 5935 │ │                     <Save className="h-4 w-4 mr-2" />
+ 5936 │ │                     Save Draft
+ 5937 │ │                   </>
+ 5938 │ │                 )}
+ 5939 │ │               </Button>
+ 5940 │ │   
+ 5941 │ │               <Button
+ 5942 │ │                 className="bg-blue-600 hover:bg-blue-700 text-white"
+ 5943 │ │                 onClick={saveQuotation}
+ 5944 │ │                 disabled={loadingStates.saveQuotation || customersLoading}
+ 5945 │ │               >
+ 5946 │ │                 {loadingStates.saveQuotation ? (
+ 5947 │ │                   <>
+ 5948 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5949 │ │                     Saving...
+ 5950 │ │                   </>
+ 5951 │ │                 ) : (
+ 5952 │ │                   <>
+ 5953 │ │                     <FileCheck className="h-4 w-4 mr-2" />
+ 5954 │ │                     Save Quotation
+ 5955 │ │                   </>
+ 5956 │ │                 )}
+ 5957 │ │               </Button>
+ 5958 │ │   
+ 5959 │ │               <Button
+ 5960 │ │                 className="bg-white text-red-600 hover:bg-red-50"
+ 5961 │ │                 onClick={generatePDF}
+ 5962 │ │                 disabled={loadingStates.generatePDF}
+ 5963 │ │               >
+ 5964 │ │                 {loadingStates.generatePDF ? (
+ 5965 │ │                   <>
+ 5966 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5967 │ │                     Generating...
+ 5968 │ │                   </>
+ 5969 │ │                 ) : (
+ 5970 │ │                   <>
+ 5971 │ │                     <Download className="h-4 w-4 mr-2" />
+ 5972 │ │                     Generate PDF
+ 5973 │ │                   </>
+ 5974 │ │                 )}
+ 5975 │ │               </Button>
+ 5976 │ │             </div>
+ 5977 │ │           </div>
+ 5978 │ │         </div>
+ 5979 │ │   
+ 5980 │ │         {/* Template Selector and Proposal Sections in one row */}
+ 5981 │ │         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+ 5982 │ │           {/* Template Selector - Takes 3 columns */}
+ 5983 │ │           <div className="lg:col-span-3">
+ 5984 │ │             <TemplateSelector />
+ 5985 │ │           </div>
+ 5986 │ │   
+ 5987 │ │           {/* Proposal Sections - Takes 9 columns (collapsed state ke hisab se adjust) */}
+ 5988 │ │           <div className="lg:col-span-9">
+ 5989 │ │        <Card className="w-full">
+ 5990 │ │     <CardHeader className="flex flex-row items-center justify-between p-3">
+ 5991 │ │       <div>
+ 5992 │ │         <CardTitle className="text-base">Sections</CardTitle>
+ 5993 │ │         {isProposalSectionsVisible && (
+ 5994 │ │           <CardDescription className="text-xs">
+ 5995 │ │             Click eye to toggle sections
+ 5996 │ │           </CardDescription>
+ 5997 │ │         )}
+ 5998 │ │       </div>
+ 5999 │ │       <Button
+ 6000 │ │         variant="ghost"
+ 6001 │ │         size="icon"
+ 6002 │ │         onClick={() => setIsProposalSectionsVisible(!isProposalSectionsVisible)}
+ 6003 │ │         className="h-6 w-6 p-0"
+ 6004 │ │       >
+ 6005 │ │         {isProposalSectionsVisible ? (
+ 6006 │ │           <EyeOff className="h-3 w-3" />
+ 6007 │ │         ) : (
+ 6008 │ │           <Eye className="h-3 w-3" />
+ 6009 │ │         )}
+ 6010 │ │       </Button>
+ 6011 │ │     </CardHeader>
+ 6012 │ │   
+ 6013 │ │     {/* Smooth collapse/expand for Proposal Sections */}
+ 6014 │ │     <div
+ 6015 │ │       className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6016 │ │         isProposalSectionsVisible
+ 6017 │ │           ? "max-h-[320px] opacity-100"
+ 6018 │ │           : "max-h-0 opacity-0"
+ 6019 │ │       }`}
+ 6020 │ │     >
+ 6021 │ │       <CardContent className="p-2">
+ 6022 │ │         {/* ULTRA COMPACT: 2 columns grid with very small spacing */}
+ 6023 │ │         <div className="grid grid-cols-2 gap-1.5">
+ 6024 │ │           {sections.map((section, index) => (
+ 6025 │ │             <div
+ 6026 │ │               key={section.id}
+ 6027 │ │               draggable
+ 6028 │ │               onDragStart={(e) => handleDragStart(e, section.id)}
+ 6029 │ │               onDragOver={handleDragOver}
+ 6030 │ │               onDrop={(e) => handleDrop(e, section.id)}
+ 6031 │ │               className={`p-1.5 rounded-md border cursor-move transition-all flex items-center justify-between ${
+ 6032 │ │                 section.enabled
+ 6033 │ │                   ? "border-green-300 bg-green-50 hover:border-green-400"
+ 6034 │ │                   : "border-gray-200 bg-gray-50 opacity-70"
+ 6035 │ │               }`}
+ 6036 │ │             >
+ 6037 │ │               {/* Left side: Section info */}
+ 6038 │ │               <div className="flex items-center space-x-1.5 flex-1 min-w-0">
+ 6039 │ │                 <div className="w-4 h-4 flex items-center justify-center rounded bg-gray-100 text-gray-600 text-xs font-bold flex-shrink-0">
+ 6040 │ │                   {section.order}
+ 6041 │ │                 </div>
+ 6042 │ │                 <span className={`text-xs font-medium truncate ${
+ 6043 │ │                   section.enabled ? "text-gray-800" : "text-gray-500"
+ 6044 │ │                 }`}>
+ 6045 │ │                   {section.title.split(" ")[0]}
+ 6046 │ │                 </span>
+ 6047 │ │               </div>
+ 6048 │ │               
+ 6049 │ │               {/* Right side: Controls */}
+ 6050 │ │               <div className="flex items-center space-x-0.5 flex-shrink-0">
+ 6051 │ │                 <Button
+ 6052 │ │                   size="sm"
+ 6053 │ │                   variant="ghost"
+ 6054 │ │                   className="h-5 w-5 p-0"
+ 6055 │ │                   onClick={() => moveSection(index, Math.max(0, index - 1))}
+ 6056 │ │                   disabled={index === 0}
+ 6057 │ │                 >
+ 6058 │ │                   <ArrowUp className="h-2 w-2" />
+ 6059 │ │                 </Button>
+ 6060 │ │                 <Button
+ 6061 │ │                   size="sm"
+ 6062 │ │                   variant="ghost"
+ 6063 │ │                   className="h-5 w-5 p-0"
+ 6064 │ │                   onClick={() => moveSection(index, Math.min(sections.length - 1, index + 1))}
+ 6065 │ │                   disabled={index === sections.length - 1}
+ 6066 │ │                 >
+ 6067 │ │                   <ArrowDown className="h-2 w-2" />
+ 6068 │ │                 </Button>
+ 6069 │ │                 <Checkbox
+ 6070 │ │                   checked={section.enabled}
+ 6071 │ │                   onCheckedChange={() => toggleSection(section.id)}
+ 6072 │ │                   className="h-3 w-3 ml-0.5"
+ 6073 │ │                 />
+ 6074 │ │               </div>
+ 6075 │ │             </div>
+ 6076 │ │           ))}
+ 6077 │ │         </div>
+ 6078 │ │         
+ 6079 │ │         
+ 6080 │ │       </CardContent>
+ 6081 │ │     </div>
+ 6082 │ │   </Card>
+ 6083 │ │           </div>
+ 6084 │ │        </div>
+ 6085 │ │   
+ 6086 │ │         {customersError && (
+ 6087 │ │           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+ 6088 │ │             <div className="flex items-center">
+ 6089 │ │               <AlertTriangle className="h-5 w-5 text-yellow-600 mr-2" />
+ 6090 │ │               <span className="text-yellow-800 text-sm">
+ 6091 │ │                 {customersError.includes("index")
+ 6092 │ │                   ? "Optimizing customer data loading... Please wait a few minutes."
+ 6093 │ │                   : customersError}
+ 6094 │ │               </span>
+ 6095 │ │             </div>
+ 6096 │ │           </div>
+ 6097 │ │         )}
+ 6098 │ │   
+ 6099 │ │         <Card className="mb-6">
+ 6100 │ │           <CardHeader className="flex flex-row items-center justify-between p-4">
+ 6101 │ │             <div>
+ 6102 │ │               {/* Title always visible */}
+ 6103 │ │               <CardTitle className="text-xl">Basic Information</CardTitle>
+ 6104 │ │   
+ 6105 │ │               {/* Description only shows when visible */}
+ 6106 │ │               {isBasicInfoVisible && (
+ 6107 │ │                 <CardDescription>
+ 6108 │ │                   Enter quotation details and select customer
+ 6109 │ │                 </CardDescription>
+ 6110 │ │               )}
+ 6111 │ │             </div>
+ 6112 │ │             <Button
+ 6113 │ │               variant="ghost"
+ 6114 │ │               size="sm"
+ 6115 │ │               onClick={() => setIsBasicInfoVisible(!isBasicInfoVisible)}
+ 6116 │ │               className="h-8 w-8 p-0"
+ 6117 │ │             >
+ 6118 │ │               {isBasicInfoVisible ? (
+ 6119 │ │                 <ChevronUp className="h-4 w-4" />
+ 6120 │ │               ) : (
+ 6121 │ │                 <ChevronDown className="h-4 w-4" />
+ 6122 │ │               )}
+ 6123 │ │             </Button>
+ 6124 │ │           </CardHeader>
+ 6125 │ │   
+ 6126 │ │           {/* Content with smooth collapse */}
+ 6127 │ │           <div
+ 6128 │ │             className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6129 │ │               isBasicInfoVisible
+ 6130 │ │                 ? "max-h-[500px] opacity-100"
+ 6131 │ │                 : "max-h-0 opacity-0"
+ 6132 │ │             }`}
+ 6133 │ │           >
+ 6134 │ │             <CardContent className="p-6 pt-0">
+ 6135 │ │               <div className="grid grid-cols-2 gap-6">
+ 6136 │ │                 <div className="space-y-4">
+ 6137 │ │                   <div className="space-y-2">
+ 6138 │ │                     <Label htmlFor="quotationNumber">Quotation Number</Label>
+ 6139 │ │                     <Input
+ 6140 │ │                       id="quotationNumber"
+ 6141 │ │                       value={quotationData.quotationNumber}
+ 6142 │ │                       onChange={(e) =>
+ 6143 │ │                         setQuotationData((prev) => ({
+ 6144 │ │                           ...prev,
+ 6145 │ │                           quotationNumber: e.target.value,
+ 6146 │ │                         }))
+ 6147 │ │                       }
+ 6148 │ │                     />
+ 6149 │ │                   </div>
+ 6150 │ │                   <div className="space-y-2">
+ 6151 │ │                     <Label htmlFor="customer">Customer</Label>
+ 6152 │ │                     <Select
+ 6153 │ │                       value={quotationData.customerId}
+ 6154 │ │                       onValueChange={(value) =>
+ 6155 │ │                         setQuotationData((prev) => ({
+ 6156 │ │                           ...prev,
+ 6157 │ │                           customerId: value,
+ 6158 │ │                         }))
+ 6159 │ │                       }
+ 6160 │ │                       disabled={customersLoading}
+ 6161 │ │                     >
+ 6162 │ │                       <SelectTrigger>
+ 6163 │ │                         <SelectValue
+ 6164 │ │                           placeholder={
+ 6165 │ │                             customersLoading
+ 6166 │ │                               ? "Loading customers..."
+ 6167 │ │                               : "Select a customer"
+ 6168 │ │                           }
+ 6169 │ │                         />
+ 6170 │ │                       </SelectTrigger>
+ 6171 │ │                       <SelectContent>
+ 6172 │ │                         {customers.map((customer) => (
+ 6173 │ │                           <SelectItem key={customer.id} value={customer.id}>
+ 6174 │ │                             {customer.companyName} -{" "}
+ 6175 │ │                             {customer.primaryContact.name}
+ 6176 │ │                           </SelectItem>
+ 6177 │ │                         ))}
+ 6178 │ │                       </SelectContent>
+ 6179 │ │                     </Select>
+ 6180 │ │                     {customersLoading && (
+ 6181 │ │                       <p className="text-sm text-gray-500 flex items-center">
+ 6182 │ │                         <Loader2 className="h-3 w-3 animate-spin mr-1" />
+ 6183 │ │                         Loading customers...
+ 6184 │ │                       </p>
+ 6185 │ │                     )}
+ 6186 │ │                   </div>
+ 6187 │ │                 </div>
+ 6188 │ │                 <div className="space-y-4">
+ 6189 │ │                   <div className="space-y-2">
+ 6190 │ │                     <Label htmlFor="issueDate">Issue Date</Label>
+ 6191 │ │                     <Input
+ 6192 │ │                       id="issueDate"
+ 6193 │ │                       type="date"
+ 6194 │ │                       value={quotationData.issueDate}
+ 6195 │ │                       onChange={(e) =>
+ 6196 │ │                         setQuotationData((prev) => ({
+ 6197 │ │                           ...prev,
+ 6198 │ │                           issueDate: e.target.value,
+ 6199 │ │                         }))
+ 6200 │ │                       }
+ 6201 │ │                     />
+ 6202 │ │                   </div>
+ 6203 │ │                   <div className="space-y-2">
+ 6204 │ │                     <Label htmlFor="validUntil">Valid Until</Label>
+ 6205 │ │                     <Input
+ 6206 │ │                       id="validUntil"
+ 6207 │ │                       type="date"
+ 6208 │ │                       value={quotationData.validUntil}
+ 6209 │ │                       onChange={(e) =>
+ 6210 │ │                         setQuotationData((prev) => ({
+ 6211 │ │                           ...prev,
+ 6212 │ │                           validUntil: e.target.value,
+ 6213 │ │                         }))
+ 6214 │ │                       }
+ 6215 │ │                     />
+ 6216 │ │                   </div>
+ 6217 │ │                 </div>
+ 6218 │ │               </div>
+ 6219 │ │             </CardContent>
+ 6220 │ │           </div>
+ 6221 │ │         </Card>
+ 6222 │ │   
+ 6223 │ │         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+ 6224 │ │           {/* Main sections content with responsive width */}
+ 6225 │ │           <div
+ 6226 │ │             className={`lg:col-span-4 space-y-6 transition-all duration-300 ease-in-out`}
+ 6227 │ │           >
+ 6228 │ │             {sections
+ 6229 │ │               .filter((section) => section.enabled)
+ 6230 │ │               .map((section) => (
+ 6231 │ │                 <Card key={section.id}>
+ 6232 │ │                   <CardHeader>
+ 6233 │ │                     <div className="flex items-center justify-between">
+ 6234 │ │                       <div className="flex items-center space-x-3">
+ 6235 │ │                         <Eye className="h-5 w-5 text-green-600" />
+ 6236 │ │                         <div>
+ 6237 │ │                           <CardTitle className="text-xl">
+ 6238 │ │                             {section.title}
+ 6239 │ │                           </CardTitle>
+ 6240 │ │                           <CardDescription>
+ 6241 │ │                             Section {section.order} • Enabled for PDF
+ 6242 │ │                           </CardDescription>
+ 6243 │ │                         </div>
+ 6244 │ │                       </div>
+ 6245 │ │                       <Badge variant="default">PDF</Badge>
+ 6246 │ │                     </div>
+ 6247 │ │                   </CardHeader>
+ 6248 │ │                   <CardContent>{renderSection(section)}</CardContent>
+ 6249 │ │                 </Card>
+ 6250 │ │               ))}
+ 6251 │ │           </div>
+ 6252 │ │         </div>
+ 6253 │ │   
+ 6254 │ │         {/* Bottom Action Buttons */}
+ 6255 │ │         <div className="fixed bottom-6 right-6 flex gap-3 bg-white p-4 rounded-lg shadow-lg border">
+ 6256 │ │           <Button
+ 6257 │ │             variant="outline"
+ 6258 │ │             onClick={saveAsDraft}
+ 6259 │ │             disabled={loadingStates.saveDraft}
+ 6260 │ │           >
+ 6261 │ │             {loadingStates.saveDraft ? (
+ 6262 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6263 │ │             ) : (
+ 6264 │ │               <Save className="h-4 w-4 mr-2" />
+ 6265 │ │             )}
+ 6266 │ │             Save Draft
+ 6267 │ │           </Button>
+ 6268 │ │   
+ 6269 │ │           <Button onClick={saveQuotation} disabled={loadingStates.saveQuotation}>
+ 6270 │ │             {loadingStates.saveQuotation ? (
+ 6271 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6272 │ │             ) : (
+ 6273 │ │               <FileCheck className="h-4 w-4 mr-2" />
+ 6274 │ │             )}
+ 6275 │ │             Save Quotation
+ 6276 │ │           </Button>
+ 6277 │ │         </div>
+ 6278 │ │       </div>
+ 6279 │ ╰─▶   );
+ 6280 │     }
+      ╰────
+  × Expression expected
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:6280:1]
+ 6277 │       </div>
+ 6278 │     </div>
+ 6279 │   );
+ 6280 │ }
+      · ─
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[01:31:05.333] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Return statement is not allowed here
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:5902:1]
+ 5899 │         }
+ 5900 │       };
+ 5901 │     
+ 5902 │ ╭─▶   return (
+ 5903 │ │       <div className="space-y-6">
+ 5904 │ │         <div className="bg-linear-to-r from-red-600 to-red-700 rounded-xl p-6 shadow-lg">
+ 5905 │ │           <div className="flex items-center justify-between">
+ 5906 │ │             <div>
+ 5907 │ │               <h1 className="text-3xl font-bold text-white">
+ 5908 │ │                 {isEditing ? "Edit Quotation" : "Create Professional Proposal"}
+ 5909 │ │               </h1>
+ 5910 │ │               <p className="text-red-100 mt-1 text-lg">
+ 5911 │ │                 {isEditing
+ 5912 │ │                   ? `Editing: ${quotationData.quotationNumber}`
+ 5913 │ │                   : "Build comprehensive proposals with 10 customizable sections"}
+ 5914 │ │               </p>
+ 5915 │ │               {savedQuotationId && (
+ 5916 │ │                 <p className="text-red-200 text-sm mt-1">
+ 5917 │ │                   Saved as: {savedQuotationId}
+ 5918 │ │                 </p>
+ 5919 │ │               )}
+ 5920 │ │             </div>
+ 5921 │ │             <div className="flex gap-3">
+ 5922 │ │               <Button
+ 5923 │ │                 variant="outline"
+ 5924 │ │                 className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+ 5925 │ │                 onClick={saveAsDraft}
+ 5926 │ │                 disabled={loadingStates.saveDraft || customersLoading}
+ 5927 │ │               >
+ 5928 │ │                 {loadingStates.saveDraft ? (
+ 5929 │ │                   <>
+ 5930 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5931 │ │                     Saving...
+ 5932 │ │                   </>
+ 5933 │ │                 ) : (
+ 5934 │ │                   <>
+ 5935 │ │                     <Save className="h-4 w-4 mr-2" />
+ 5936 │ │                     Save Draft
+ 5937 │ │                   </>
+ 5938 │ │                 )}
+ 5939 │ │               </Button>
+ 5940 │ │   
+ 5941 │ │               <Button
+ 5942 │ │                 className="bg-blue-600 hover:bg-blue-700 text-white"
+ 5943 │ │                 onClick={saveQuotation}
+ 5944 │ │                 disabled={loadingStates.saveQuotation || customersLoading}
+ 5945 │ │               >
+ 5946 │ │                 {loadingStates.saveQuotation ? (
+ 5947 │ │                   <>
+ 5948 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5949 │ │                     Saving...
+ 5950 │ │                   </>
+ 5951 │ │                 ) : (
+ 5952 │ │                   <>
+ 5953 │ │                     <FileCheck className="h-4 w-4 mr-2" />
+ 5954 │ │                     Save Quotation
+ 5955 │ │                   </>
+ 5956 │ │                 )}
+ 5957 │ │               </Button>
+ 5958 │ │   
+ 5959 │ │               <Button
+ 5960 │ │                 className="bg-white text-red-600 hover:bg-red-50"
+ 5961 │ │                 onClick={generatePDF}
+ 5962 │ │                 disabled={loadingStates.generatePDF}
+ 5963 │ │               >
+ 5964 │ │                 {loadingStates.generatePDF ? (
+ 5965 │ │                   <>
+ 5966 │ │                     <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 5967 │ │                     Generating...
+ 5968 │ │                   </>
+ 5969 │ │                 ) : (
+ 5970 │ │                   <>
+ 5971 │ │                     <Download className="h-4 w-4 mr-2" />
+ 5972 │ │                     Generate PDF
+ 5973 │ │                   </>
+ 5974 │ │                 )}
+ 5975 │ │               </Button>
+ 5976 │ │             </div>
+ 5977 │ │           </div>
+ 5978 │ │         </div>
+ 5979 │ │   
+ 5980 │ │         {/* Template Selector and Proposal Sections in one row */}
+ 5981 │ │         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+ 5982 │ │           {/* Template Selector - Takes 3 columns */}
+ 5983 │ │           <div className="lg:col-span-3">
+ 5984 │ │             <TemplateSelector />
+ 5985 │ │           </div>
+ 5986 │ │   
+ 5987 │ │           {/* Proposal Sections - Takes 9 columns (collapsed state ke hisab se adjust) */}
+ 5988 │ │           <div className="lg:col-span-9">
+ 5989 │ │        <Card className="w-full">
+ 5990 │ │     <CardHeader className="flex flex-row items-center justify-between p-3">
+ 5991 │ │       <div>
+ 5992 │ │         <CardTitle className="text-base">Sections</CardTitle>
+ 5993 │ │         {isProposalSectionsVisible && (
+ 5994 │ │           <CardDescription className="text-xs">
+ 5995 │ │             Click eye to toggle sections
+ 5996 │ │           </CardDescription>
+ 5997 │ │         )}
+ 5998 │ │       </div>
+ 5999 │ │       <Button
+ 6000 │ │         variant="ghost"
+ 6001 │ │         size="icon"
+ 6002 │ │         onClick={() => setIsProposalSectionsVisible(!isProposalSectionsVisible)}
+ 6003 │ │         className="h-6 w-6 p-0"
+ 6004 │ │       >
+ 6005 │ │         {isProposalSectionsVisible ? (
+ 6006 │ │           <EyeOff className="h-3 w-3" />
+ 6007 │ │         ) : (
+ 6008 │ │           <Eye className="h-3 w-3" />
+ 6009 │ │         )}
+ 6010 │ │       </Button>
+ 6011 │ │     </CardHeader>
+ 6012 │ │   
+ 6013 │ │     {/* Smooth collapse/expand for Proposal Sections */}
+ 6014 │ │     <div
+ 6015 │ │       className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6016 │ │         isProposalSectionsVisible
+ 6017 │ │           ? "max-h-[320px] opacity-100"
+ 6018 │ │           : "max-h-0 opacity-0"
+ 6019 │ │       }`}
+ 6020 │ │     >
+ 6021 │ │       <CardContent className="p-2">
+ 6022 │ │         {/* ULTRA COMPACT: 2 columns grid with very small spacing */}
+ 6023 │ │         <div className="grid grid-cols-2 gap-1.5">
+ 6024 │ │           {sections.map((section, index) => (
+ 6025 │ │             <div
+ 6026 │ │               key={section.id}
+ 6027 │ │               draggable
+ 6028 │ │               onDragStart={(e) => handleDragStart(e, section.id)}
+ 6029 │ │               onDragOver={handleDragOver}
+ 6030 │ │               onDrop={(e) => handleDrop(e, section.id)}
+ 6031 │ │               className={`p-1.5 rounded-md border cursor-move transition-all flex items-center justify-between ${
+ 6032 │ │                 section.enabled
+ 6033 │ │                   ? "border-green-300 bg-green-50 hover:border-green-400"
+ 6034 │ │                   : "border-gray-200 bg-gray-50 opacity-70"
+ 6035 │ │               }`}
+ 6036 │ │             >
+ 6037 │ │               {/* Left side: Section info */}
+ 6038 │ │               <div className="flex items-center space-x-1.5 flex-1 min-w-0">
+ 6039 │ │                 <div className="w-4 h-4 flex items-center justify-center rounded bg-gray-100 text-gray-600 text-xs font-bold flex-shrink-0">
+ 6040 │ │                   {section.order}
+ 6041 │ │                 </div>
+ 6042 │ │                 <span className={`text-xs font-medium truncate ${
+ 6043 │ │                   section.enabled ? "text-gray-800" : "text-gray-500"
+ 6044 │ │                 }`}>
+ 6045 │ │                   {section.title.split(" ")[0]}
+ 6046 │ │                 </span>
+ 6047 │ │               </div>
+ 6048 │ │               
+ 6049 │ │               {/* Right side: Controls */}
+ 6050 │ │               <div className="flex items-center space-x-0.5 flex-shrink-0">
+ 6051 │ │                 <Button
+ 6052 │ │                   size="sm"
+ 6053 │ │                   variant="ghost"
+ 6054 │ │                   className="h-5 w-5 p-0"
+ 6055 │ │                   onClick={() => moveSection(index, Math.max(0, index - 1))}
+ 6056 │ │                   disabled={index === 0}
+ 6057 │ │                 >
+ 6058 │ │                   <ArrowUp className="h-2 w-2" />
+ 6059 │ │                 </Button>
+ 6060 │ │                 <Button
+ 6061 │ │                   size="sm"
+ 6062 │ │                   variant="ghost"
+ 6063 │ │                   className="h-5 w-5 p-0"
+ 6064 │ │                   onClick={() => moveSection(index, Math.min(sections.length - 1, index + 1))}
+ 6065 │ │                   disabled={index === sections.length - 1}
+ 6066 │ │                 >
+ 6067 │ │                   <ArrowDown className="h-2 w-2" />
+ 6068 │ │                 </Button>
+ 6069 │ │                 <Checkbox
+ 6070 │ │                   checked={section.enabled}
+ 6071 │ │                   onCheckedChange={() => toggleSection(section.id)}
+ 6072 │ │                   className="h-3 w-3 ml-0.5"
+ 6073 │ │                 />
+ 6074 │ │               </div>
+ 6075 │ │             </div>
+ 6076 │ │           ))}
+ 6077 │ │         </div>
+ 6078 │ │         
+ 6079 │ │         
+ 6080 │ │       </CardContent>
+ 6081 │ │     </div>
+ 6082 │ │   </Card>
+ 6083 │ │           </div>
+ 6084 │ │        </div>
+ 6085 │ │   
+ 6086 │ │         {customersError && (
+ 6087 │ │           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+ 6088 │ │             <div className="flex items-center">
+ 6089 │ │               <AlertTriangle className="h-5 w-5 text-yellow-600 mr-2" />
+ 6090 │ │               <span className="text-yellow-800 text-sm">
+ 6091 │ │                 {customersError.includes("index")
+ 6092 │ │                   ? "Optimizing customer data loading... Please wait a few minutes."
+ 6093 │ │                   : customersError}
+ 6094 │ │               </span>
+ 6095 │ │             </div>
+ 6096 │ │           </div>
+ 6097 │ │         )}
+ 6098 │ │   
+ 6099 │ │         <Card className="mb-6">
+ 6100 │ │           <CardHeader className="flex flex-row items-center justify-between p-4">
+ 6101 │ │             <div>
+ 6102 │ │               {/* Title always visible */}
+ 6103 │ │               <CardTitle className="text-xl">Basic Information</CardTitle>
+ 6104 │ │   
+ 6105 │ │               {/* Description only shows when visible */}
+ 6106 │ │               {isBasicInfoVisible && (
+ 6107 │ │                 <CardDescription>
+ 6108 │ │                   Enter quotation details and select customer
+ 6109 │ │                 </CardDescription>
+ 6110 │ │               )}
+ 6111 │ │             </div>
+ 6112 │ │             <Button
+ 6113 │ │               variant="ghost"
+ 6114 │ │               size="sm"
+ 6115 │ │               onClick={() => setIsBasicInfoVisible(!isBasicInfoVisible)}
+ 6116 │ │               className="h-8 w-8 p-0"
+ 6117 │ │             >
+ 6118 │ │               {isBasicInfoVisible ? (
+ 6119 │ │                 <ChevronUp className="h-4 w-4" />
+ 6120 │ │               ) : (
+ 6121 │ │                 <ChevronDown className="h-4 w-4" />
+ 6122 │ │               )}
+ 6123 │ │             </Button>
+ 6124 │ │           </CardHeader>
+ 6125 │ │   
+ 6126 │ │           {/* Content with smooth collapse */}
+ 6127 │ │           <div
+ 6128 │ │             className={`transition-all duration-300 ease-in-out overflow-hidden ${
+ 6129 │ │               isBasicInfoVisible
+ 6130 │ │                 ? "max-h-[500px] opacity-100"
+ 6131 │ │                 : "max-h-0 opacity-0"
+ 6132 │ │             }`}
+ 6133 │ │           >
+ 6134 │ │             <CardContent className="p-6 pt-0">
+ 6135 │ │               <div className="grid grid-cols-2 gap-6">
+ 6136 │ │                 <div className="space-y-4">
+ 6137 │ │                   <div className="space-y-2">
+ 6138 │ │                     <Label htmlFor="quotationNumber">Quotation Number</Label>
+ 6139 │ │                     <Input
+ 6140 │ │                       id="quotationNumber"
+ 6141 │ │                       value={quotationData.quotationNumber}
+ 6142 │ │                       onChange={(e) =>
+ 6143 │ │                         setQuotationData((prev) => ({
+ 6144 │ │                           ...prev,
+ 6145 │ │                           quotationNumber: e.target.value,
+ 6146 │ │                         }))
+ 6147 │ │                       }
+ 6148 │ │                     />
+ 6149 │ │                   </div>
+ 6150 │ │                   <div className="space-y-2">
+ 6151 │ │                     <Label htmlFor="customer">Customer</Label>
+ 6152 │ │                     <Select
+ 6153 │ │                       value={quotationData.customerId}
+ 6154 │ │                       onValueChange={(value) =>
+ 6155 │ │                         setQuotationData((prev) => ({
+ 6156 │ │                           ...prev,
+ 6157 │ │                           customerId: value,
+ 6158 │ │                         }))
+ 6159 │ │                       }
+ 6160 │ │                       disabled={customersLoading}
+ 6161 │ │                     >
+ 6162 │ │                       <SelectTrigger>
+ 6163 │ │                         <SelectValue
+ 6164 │ │                           placeholder={
+ 6165 │ │                             customersLoading
+ 6166 │ │                               ? "Loading customers..."
+ 6167 │ │                               : "Select a customer"
+ 6168 │ │                           }
+ 6169 │ │                         />
+ 6170 │ │                       </SelectTrigger>
+ 6171 │ │                       <SelectContent>
+ 6172 │ │                         {customers.map((customer) => (
+ 6173 │ │                           <SelectItem key={customer.id} value={customer.id}>
+ 6174 │ │                             {customer.companyName} -{" "}
+ 6175 │ │                             {customer.primaryContact.name}
+ 6176 │ │                           </SelectItem>
+ 6177 │ │                         ))}
+ 6178 │ │                       </SelectContent>
+ 6179 │ │                     </Select>
+ 6180 │ │                     {customersLoading && (
+ 6181 │ │                       <p className="text-sm text-gray-500 flex items-center">
+ 6182 │ │                         <Loader2 className="h-3 w-3 animate-spin mr-1" />
+ 6183 │ │                         Loading customers...
+ 6184 │ │                       </p>
+ 6185 │ │                     )}
+ 6186 │ │                   </div>
+ 6187 │ │                 </div>
+ 6188 │ │                 <div className="space-y-4">
+ 6189 │ │                   <div className="space-y-2">
+ 6190 │ │                     <Label htmlFor="issueDate">Issue Date</Label>
+ 6191 │ │                     <Input
+ 6192 │ │                       id="issueDate"
+ 6193 │ │                       type="date"
+ 6194 │ │                       value={quotationData.issueDate}
+ 6195 │ │                       onChange={(e) =>
+ 6196 │ │                         setQuotationData((prev) => ({
+ 6197 │ │                           ...prev,
+ 6198 │ │                           issueDate: e.target.value,
+ 6199 │ │                         }))
+ 6200 │ │                       }
+ 6201 │ │                     />
+ 6202 │ │                   </div>
+ 6203 │ │                   <div className="space-y-2">
+ 6204 │ │                     <Label htmlFor="validUntil">Valid Until</Label>
+ 6205 │ │                     <Input
+ 6206 │ │                       id="validUntil"
+ 6207 │ │                       type="date"
+ 6208 │ │                       value={quotationData.validUntil}
+ 6209 │ │                       onChange={(e) =>
+ 6210 │ │                         setQuotationData((prev) => ({
+ 6211 │ │                           ...prev,
+ 6212 │ │                           validUntil: e.target.value,
+ 6213 │ │                         }))
+ 6214 │ │                       }
+ 6215 │ │                     />
+ 6216 │ │                   </div>
+ 6217 │ │                 </div>
+ 6218 │ │               </div>
+ 6219 │ │             </CardContent>
+ 6220 │ │           </div>
+ 6221 │ │         </Card>
+ 6222 │ │   
+ 6223 │ │         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+ 6224 │ │           {/* Main sections content with responsive width */}
+ 6225 │ │           <div
+ 6226 │ │             className={`lg:col-span-4 space-y-6 transition-all duration-300 ease-in-out`}
+ 6227 │ │           >
+ 6228 │ │             {sections
+ 6229 │ │               .filter((section) => section.enabled)
+ 6230 │ │               .map((section) => (
+ 6231 │ │                 <Card key={section.id}>
+ 6232 │ │                   <CardHeader>
+ 6233 │ │                     <div className="flex items-center justify-between">
+ 6234 │ │                       <div className="flex items-center space-x-3">
+ 6235 │ │                         <Eye className="h-5 w-5 text-green-600" />
+ 6236 │ │                         <div>
+ 6237 │ │                           <CardTitle className="text-xl">
+ 6238 │ │                             {section.title}
+ 6239 │ │                           </CardTitle>
+ 6240 │ │                           <CardDescription>
+ 6241 │ │                             Section {section.order} • Enabled for PDF
+ 6242 │ │                           </CardDescription>
+ 6243 │ │                         </div>
+ 6244 │ │                       </div>
+ 6245 │ │                       <Badge variant="default">PDF</Badge>
+ 6246 │ │                     </div>
+ 6247 │ │                   </CardHeader>
+ 6248 │ │                   <CardContent>{renderSection(section)}</CardContent>
+ 6249 │ │                 </Card>
+ 6250 │ │               ))}
+ 6251 │ │           </div>
+ 6252 │ │         </div>
+ 6253 │ │   
+ 6254 │ │         {/* Bottom Action Buttons */}
+ 6255 │ │         <div className="fixed bottom-6 right-6 flex gap-3 bg-white p-4 rounded-lg shadow-lg border">
+ 6256 │ │           <Button
+ 6257 │ │             variant="outline"
+ 6258 │ │             onClick={saveAsDraft}
+ 6259 │ │             disabled={loadingStates.saveDraft}
+ 6260 │ │           >
+ 6261 │ │             {loadingStates.saveDraft ? (
+ 6262 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6263 │ │             ) : (
+ 6264 │ │               <Save className="h-4 w-4 mr-2" />
+ 6265 │ │             )}
+ 6266 │ │             Save Draft
+ 6267 │ │           </Button>
+ 6268 │ │   
+ 6269 │ │           <Button onClick={saveQuotation} disabled={loadingStates.saveQuotation}>
+ 6270 │ │             {loadingStates.saveQuotation ? (
+ 6271 │ │               <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+ 6272 │ │             ) : (
+ 6273 │ │               <FileCheck className="h-4 w-4 mr-2" />
+ 6274 │ │             )}
+ 6275 │ │             Save Quotation
+ 6276 │ │           </Button>
+ 6277 │ │         </div>
+ 6278 │ │       </div>
+ 6279 │ ╰─▶   );
+ 6280 │     }
+      ╰────
+  × Expression expected
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:6280:1]
+ 6277 │       </div>
+ 6278 │     </div>
+ 6279 │   );
+ 6280 │ }
+      · ─
+      ╰────
+
+Caused by:
+    Syntax Error
+[01:31:09.233] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:31:10.163] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[01:31:18.646] Server  WARN    [2025-12-08T04:34:44.139Z]  @firebase/analytics: "Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context)."
+[01:31:18.864] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:31:40.555] Browser ERROR   uncaughtError: ReferenceError: Wrench is not defined
+[01:32:12.832] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:32:18.695] Server  WARN    [2025-12-08T04:35:44.189Z]  @firebase/analytics: "Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context)."
+[02:20:43.519] Browser LOG     Toggling service popup for item: item_1765170563774
+[02:26:42.177] Browser LOG     Toggling service popup for item: item_1765170563774
+[03:19:22.761] Browser ERROR   uncaughtError: ReferenceError: CheckCircle is not defined
+[03:19:47.487] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:19:54.151] Server  WARN    [2025-12-08T06:23:19.713Z]  @firebase/analytics: "Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context)."
+[03:34:14.330] Browser WARN    [2025-12-08T06:37:39.669Z]  @firebase/firestore: Firestore (12.5.0): WebChannelConnection RPC 'Listen' stream 0x51809941 transport errored. Name: undefined Message: undefined
+[03:34:21.999] Browser WARN    [2025-12-08T06:37:45.887Z]  @firebase/firestore: Firestore (12.5.0): WebChannelConnection RPC 'Listen' stream 0x51809942 transport errored. Name: undefined Message: undefined
+[04:29:25.642] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4958:1]
+ 4955 │                                 </div>
+ 4956 │                               )}
+ 4957 │                             </div>
+ 4958 │                           </div>
+      ·                            ─────
+ 4959 │ 
+ 4960 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4960 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:29:27.015] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4958:1]
+ 4955 │                                 </div>
+ 4956 │                               )}
+ 4957 │                             </div>
+ 4958 │                           </div>
+      ·                            ─────
+ 4959 │ 
+ 4960 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4960 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:29:28.918] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4958:1]
+ 4955 │                                 </div>
+ 4956 │                               )}
+ 4957 │                             </div>
+ 4958 │                           </div>
+      ·                            ─────
+ 4959 │ 
+ 4960 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4960 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:29:30.351] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4958:1]
+ 4955 │                                 </div>
+ 4956 │                               )}
+ 4957 │                             </div>
+ 4958 │                           </div>
+      ·                            ─────
+ 4959 │ 
+ 4960 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4960 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[04:29:30.878] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4958:1]
+ 4955 │                                 </div>
+ 4956 │                               )}
+ 4957 │                             </div>
+ 4958 │                           </div>
+      ·                            ─────
+ 4959 │ 
+ 4960 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4960 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+Caused by:
+    Syntax Error
+[04:30:13.155] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:30:14.316] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:30:15.518] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4978:1]
+ 4975 │                                 </div>
+ 4976 │                               )}
+ 4977 │                             </div>
+ 4978 │                           </div>
+      ·                            ─────
+ 4979 │ 
+ 4980 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4980 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:30:16.418] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4978:1]
+ 4975 │                                 </div>
+ 4976 │                               )}
+ 4977 │                             </div>
+ 4978 │                           </div>
+      ·                            ─────
+ 4979 │ 
+ 4980 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4980 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:30:16.852] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4978:1]
+ 4975 │                                 </div>
+ 4976 │                               )}
+ 4977 │                             </div>
+ 4978 │                           </div>
+      ·                            ─────
+ 4979 │ 
+ 4980 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4980 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:30:17.839] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4978:1]
+ 4975 │                                 </div>
+ 4976 │                               )}
+ 4977 │                             </div>
+ 4978 │                           </div>
+      ·                            ─────
+ 4979 │ 
+ 4980 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4980 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[04:30:17.960] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4978:1]
+ 4975 │                                 </div>
+ 4976 │                               )}
+ 4977 │                             </div>
+ 4978 │                           </div>
+      ·                            ─────
+ 4979 │ 
+ 4980 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+ 4980 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+      ╰────
+
+Caused by:
+    Syntax Error
+[04:31:17.856] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:31:19.392] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:31:28.404] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:31:30.656] Server  WARN    [2025-12-08T07:34:56.225Z]  @firebase/analytics: "Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context)."
+[04:37:38.802] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4913:1]
+ 4910 │                             </div>
+ 4911 │                           </div>
+ 4912 │ 
+ 4913 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+      ·                           ─
+ 4914 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+ 4915 │                             {/* Old delete button removed from here as it's now in the Total column */}
+ 4915 │                           </div>
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:37:39.945] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4913:1]
+ 4910 │                             </div>
+ 4911 │                           </div>
+ 4912 │ 
+ 4913 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+      ·                           ─
+ 4914 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+ 4915 │                             {/* Old delete button removed from here as it's now in the Total column */}
+ 4915 │                           </div>
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:37:41.981] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4913:1]
+ 4910 │                             </div>
+ 4911 │                           </div>
+ 4912 │ 
+ 4913 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+      ·                           ─
+ 4914 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+ 4915 │                             {/* Old delete button removed from here as it's now in the Total column */}
+ 4915 │                           </div>
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:37:43.988] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4913:1]
+ 4910 │                             </div>
+ 4911 │                           </div>
+ 4912 │ 
+ 4913 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+      ·                           ─
+ 4914 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+ 4915 │                             {/* Old delete button removed from here as it's now in the Total column */}
+ 4915 │                           </div>
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[04:37:44.327] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4913:1]
+ 4910 │                             </div>
+ 4911 │                           </div>
+ 4912 │ 
+ 4913 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+      ·                           ─
+ 4914 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+ 4915 │                             {/* Old delete button removed from here as it's now in the Total column */}
+ 4915 │                           </div>
+      ╰────
+
+Caused by:
+    Syntax Error
+[04:38:04.323] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[04:38:05.478] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[04:38:11.762] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:38:13.282] Server  WARN    [2025-12-08T07:41:38.850Z]  @firebase/analytics: "Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context)."
+[04:38:53.885] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4775:1]
+ 4772 │                             )}
+ 4773 │                           </div>
+ 4774 │               </div>
+ 4775 │                             </div>
+      ·                              ─────
+ 4776 │                           
+ 4777 │ 
+ 4777 │                             {/* Services Section with Toggle Icon */}
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:38:55.197] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4775:1]
+ 4772 │                             )}
+ 4773 │                           </div>
+ 4774 │               </div>
+ 4775 │                             </div>
+      ·                              ─────
+ 4776 │                           
+ 4777 │ 
+ 4777 │                             {/* Services Section with Toggle Icon */}
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:38:56.069] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4775:1]
+ 4772 │                             )}
+ 4773 │                           </div>
+ 4774 │               </div>
+ 4775 │                             </div>
+      ·                              ─────
+ 4776 │                           
+ 4777 │ 
+ 4777 │                             {/* Services Section with Toggle Icon */}
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:38:57.172] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4775:1]
+ 4772 │                             )}
+ 4773 │                           </div>
+ 4774 │               </div>
+ 4775 │                             </div>
+      ·                              ─────
+ 4776 │                           
+ 4777 │ 
+ 4777 │                             {/* Services Section with Toggle Icon */}
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[04:38:57.325] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Unterminated regexp literal
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4775:1]
+ 4772 │                             )}
+ 4773 │                           </div>
+ 4774 │               </div>
+ 4775 │                             </div>
+      ·                              ─────
+ 4776 │                           
+ 4777 │ 
+ 4777 │                             {/* Services Section with Toggle Icon */}
+      ╰────
+
+Caused by:
+    Syntax Error
+[04:39:06.452] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:39:07.912] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:39:09.179] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4778:1]
+ 4775 │                             
+ 4776 │                           
+ 4777 │ 
+ 4778 │                             {/* Services Section with Toggle Icon */}
+      ·                             ─
+ 4779 │                             <div className="space-y-3">
+ 4780 │                               {/* Eye Icon to Toggle Services */}
+ 4780 │                               <div className="flex items-center justify-between mb-2">
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:39:10.101] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4778:1]
+ 4775 │                             
+ 4776 │                           
+ 4777 │ 
+ 4778 │                             {/* Services Section with Toggle Icon */}
+      ·                             ─
+ 4779 │                             <div className="space-y-3">
+ 4780 │                               {/* Eye Icon to Toggle Services */}
+ 4780 │                               <div className="flex items-center justify-between mb-2">
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:39:10.547] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4778:1]
+ 4775 │                             
+ 4776 │                           
+ 4777 │ 
+ 4778 │                             {/* Services Section with Toggle Icon */}
+      ·                             ─
+ 4779 │                             <div className="space-y-3">
+ 4780 │                               {/* Eye Icon to Toggle Services */}
+ 4780 │                               <div className="flex items-center justify-between mb-2">
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:39:11.465] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4778:1]
+ 4775 │                             
+ 4776 │                           
+ 4777 │ 
+ 4778 │                             {/* Services Section with Toggle Icon */}
+      ·                             ─
+ 4779 │                             <div className="space-y-3">
+ 4780 │                               {/* Eye Icon to Toggle Services */}
+ 4780 │                               <div className="flex items-center justify-between mb-2">
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[04:39:11.619] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4778:1]
+ 4775 │                             
+ 4776 │                           
+ 4777 │ 
+ 4778 │                             {/* Services Section with Toggle Icon */}
+      ·                             ─
+ 4779 │                             <div className="space-y-3">
+ 4780 │                               {/* Eye Icon to Toggle Services */}
+ 4780 │                               <div className="flex items-center justify-between mb-2">
+      ╰────
+
+Caused by:
+    Syntax Error
+[04:39:22.416] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:39:23.307] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:39:24.347] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4914:1]
+ 4911 │                             </div>
+ 4912 │                           </div>
+ 4913 │ 
+ 4914 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+      ·                           ─
+ 4915 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+ 4916 │                             {/* Old delete button removed from here as it's now in the Total column */}
+ 4916 │                           </div>
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:39:24.416] Server  ERROR    ⨯ ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4914:1]
+ 4911 │                             </div>
+ 4912 │                           </div>
+ 4913 │ 
+ 4914 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+      ·                           ─
+ 4915 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+ 4916 │                             {/* Old delete button removed from here as it's now in the Total column */}
+ 4916 │                           </div>
+      ╰────
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/app/(admin)/admin/sales/quotations/new/page.tsx
+[04:39:25.738] Browser ERROR   uncaughtError: ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4778:1]
+ 4775 │                             
+ 4776 │                           
+ 4777 │ 
+ 4778 │                             {/* Services Section with Toggle Icon */}
+      ·                             ─
+ 4779 │                             <div className="space-y-3">
+ 4780 │                               {/* Eye Icon to Toggle Services */}
+ 4780 │                               <div className="flex items-center justify-between mb-2">
+      ╰────
+
+
+Caused by:
+    Syntax Error
+[04:39:25.869] Browser ERROR   ./src/app/(admin)/admin/sales/quotations/new/page.tsx
+Error:   × Expected '</', got '{'
+      ╭─[C:\sbr\SBRV4\src\app\(admin)\admin\sales\quotations\new\page.tsx:4914:1]
+ 4911 │                             </div>
+ 4912 │                           </div>
+ 4913 │ 
+ 4914 │                           {/* ACTION BUTTONS - REMOVED OLD DELETE BUTTON FROM HERE */}
+      ·                           ─
+ 4915 │                           <div className="flex justify-end gap-3 mt-4 pt-4 border-t">
+ 4916 │                             {/* Old delete button removed from here as it's now in the Total column */}
+ 4916 │                           </div>
+      ╰────
+
+Caused by:
+    Syntax Error
+[04:49:47.214] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:49:50.091] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:49:57.943] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[04:50:00.149] Server  WARN    [2025-12-08T07:53:25.719Z]  @firebase/analytics: "Analytics: Firebase Analytics is not supported in this environment. Wrap initialization of analytics in analytics.isSupported() to prevent initialization in unsupported environments. Details: (1) Cookies are not available. (analytics/invalid-analytics-context)."
+[06:00:32.782] Browser WARN    [2025-12-08T09:03:58.240Z]  @firebase/firestore: Firestore (12.5.0): WebChannelConnection RPC 'Listen' stream 0x166af048 transport errored. Name: undefined Message: undefined
+[06:00:35.905] Browser WARN    [2025-12-08T09:04:01.373Z]  @firebase/firestore: Firestore (12.5.0): WebChannelConnection RPC 'Listen' stream 0x166af049 transport errored. Name: undefined Message: undefined
+[06:00:37.912] Browser WARN    [2025-12-08T09:04:03.377Z]  @firebase/firestore: Firestore (12.5.0): WebChannelConnection RPC 'Listen' stream 0x166af04a transport errored. Name: undefined Message: undefined
+[06:00:37.912] Browser WARN    [2025-12-08T09:04:03.383Z]  @firebase/firestore: Firestore (12.5.0): WebChannelConnection RPC 'Listen' stream 0x166af04b transport errored. Name: undefined Message: undefined
+[06:00:39.359] Browser WARN    [2025-12-08T09:04:04.823Z]  @firebase/firestore: Firestore (12.5.0): WebChannelConnection RPC 'Listen' stream 0x166af04c transport errored. Name: undefined Message: undefined
+[06:00:42.045] Browser WARN    [2025-12-08T09:04:07.516Z]  @firebase/firestore: Firestore (12.5.0): WebChannelConnection RPC 'Listen' stream 0x166af04d transport errored. Name: undefined Message: undefined
+[06:00:49.629] Browser WARN    [2025-12-08T09:04:15.094Z]  @firebase/firestore: Firestore (12.5.0): WebChannelConnection RPC 'Listen' stream 0x166af04e transport errored. Name: undefined Message: undefined
